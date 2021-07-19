@@ -1,0 +1,538 @@
+@import '../../styles/_variables.less';
+
+.mainDocuments{
+  width: 100%;
+  /*max-width: 894px;*/
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.navigationBreadCump {
+  color: @textPrimary !important;
+  .openSans-700-n();
+  font-size: 16px !important;
+  cursor: pointer;
+  span{
+    &:last-child {
+      a{
+        color: @textPrimary !important;
+      }
+    }
+  }
+}
+
+.typeBox {    
+    border: 2px solid #457F46;
+    border-radius: 12px;
+    width: 84px;
+    padding: 7px;
+    height: 115px;
+    position: relative;
+    text-align: center;
+    @media (max-width: 1087px) {
+      border-width: 2px;
+      border-style: solid;
+      border-radius: 12px;
+      width: 84px;
+      padding: 7px;
+      height: 115px;
+      position: relative;
+      margin-right: 15px;
+      text-align: center;
+    }
+    h3 {
+      font-size: 14px;
+      line-height: normal;
+      margin: 0;
+      color: #457F46;
+      font-weight: 600;
+      text-transform: uppercase;
+      word-break: break-word;
+      @media (max-width: 767px) {
+        font-size: 12px;
+        line-height: 16px;
+        margin: 0;
+        color: #457f46;
+        font-weight: 600;
+        text-transform: uppercase;
+        word-break: break-word;
+      }
+  }
+  span {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 0 0 7px 7px;
+      margin: 0;
+      font-size: 12px;
+      color: #fff;
+      text-align: center;
+      padding: 5px 0;
+      font-weight: 500;
+      line-height: 1;
+      min-height: 22px;
+      @media (max-width: 767px) {
+        font-size: 12px;
+      }
+  }
+  svg {
+    width: 60px;
+    height: 60px;
+    margin-top: 7px;
+    fill: #457F46;
+  }
+}
+
+.uploadBtn {
+    text-align: right;
+    margin-bottom: 50px;
+    button {
+      max-width: 140px;
+      width: 100%;
+  }
+}
+
+
+.header {
+  font-size: 32px;
+  color: @textPrimary;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  /*text-transform: capitalize;*/
+  @media (max-width: 767px) { 
+    font-size: 24px;
+    margin-bottom: 8px;
+    margin-top: 0;
+    display: none;
+  }
+}
+.certainCategoryIcon svg {
+  font-size: 20px;
+  color: @infoGray !important;
+}
+.searchInput {
+  width: 100%;
+}
+.searchInput input:focus {
+  box-shadow: 0 0 0 1.5px rgba(51, 88, 137, 0.7);
+}
+.searchInputBlock {
+  margin-bottom: 24px;
+  position: relative;
+  max-width: 900px;
+  & .suggestionsList {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    z-index: 2;
+    transition: top 0.7s ease-in-out;
+    & > div {
+      background: rgba(255, 255, 255, 1) !important;
+    }
+  }
+}
+.searchInput input {
+  border: unset;
+  background-color: #fff !important;
+  padding-left: 40px !important;
+  color: @textPrimary !important;
+  font-size: 16px !important;
+  .openSans-600-n();
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.0956465);
+  height: 54px !important;
+}
+.searchInput input::-webkit-input-placeholder {
+  .openSans-400-n();
+  color: @infoGray !important;
+}
+.searchInput input:-ms-input-placeholder {
+  .openSans-400-n();
+  color: @infoGray !important;
+}
+.containerEncyclopedia,
+.containerEncyclopediaEntry {
+  max-width: 900px;
+  font-size: 16px;
+  color: @textPrimary;
+}
+p,
+div {
+  font-size: 16px;
+  color: @textPrimary;
+}
+.cardHeaderBlock {
+  position: relative;
+  height: 32px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  & .cardHeader {
+    color: @infoGray;
+    font-size: 12px;
+    .openSans-700-n();
+    text-transform: uppercase;
+  }
+}
+.tags {
+  width: 500px;
+}
+.tag {
+  height: 40px !important;
+}
+.paragraphInfo {
+  color: @infoGray;
+  min-height: 42px;
+  .openSans-400-n();
+  margin-bottom: 0;
+}
+.symptomInfoBlock {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  min-height: 94px;
+  align-items: flex-start;
+}
+.infoUser {
+  display: flex;
+  height: 70px;
+  min-width: 320px;
+  flex-shrink: 0;
+  & .avatar {
+      width: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      background: @lightGray;
+      border-radius: 50%;
+      margin-right: 16px;
+      & svg {
+          font-size: 70px;
+      }
+  }
+}
+.selectBlock {
+  width: 234.55px;
+    & .selectBlock1 {
+        margin-bottom: 10px;
+    }
+}
+.selectBlock2 {
+  display: flex;
+}
+.selectBlock2 .selectWrap {
+    margin-right: 10px;
+}
+.wrapCustomCard {
+    margin-bottom: 25px;
+}
+.customSelect div{
+  font-size: 14px;
+}
+.customSelect  > div {
+    background: @lightGray;
+    border: unset;
+}
+.itemCause {
+    display: flex;
+    margin-bottom: 10px;
+    border-radius: 14px;
+    &:hover {
+        background: @lightGray;
+        cursor: pointer;
+        & .nameCause {
+          text-decoration: underline;
+        }
+    }
+}
+.percentBlock {
+    width: 59px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 14px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+ .nameCause {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+ }
+ .header {
+  color: @textPrimary;
+}
+.header .percentBlock + div {
+  font-size: 14px;
+}
+.headerDrawer {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 22px;
+  & p {
+    margin: 0 10px;
+  }
+  & button {
+    box-shadow: unset;
+    border: unset;
+    background: @lightGray;
+    .openSans-600-n();
+    color: @textPrimary;
+    height: 24px;
+    width: 24px;
+    padding: 0;
+  }
+}
+.headerCause {
+  margin: 0;
+  font-size: 22px;
+}
+.infoCause {
+  margin: 24px 0;
+}
+.cardWrapperNewMetric {
+  cursor: initial;
+  padding-bottom: 24px;
+  & .infoCausePercent {
+    margin-top: 0;
+  }
+  & .headerInfo,
+  & .headerInfoNoSelected {
+    color: @textPrimary;
+    font-size: 15px;
+    .openSans-400-n();
+    margin-bottom: 30px;
+  }
+  & .headerInfoNoSelected {
+    background: #f4f6f7;
+    padding: 10px 20px;
+    border-radius: 14px;
+  }
+  & .selectedMetrics {
+    margin-bottom: 38px;
+  }
+  & .selectedMetricHeader {
+    color: @infoGray;
+    font-size: 12px;
+    .lato-900-n();
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+}
+.btnBlock {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  border-top: 1px solid rgb(232, 232, 232);
+  padding: 10px 16px;
+  text-align: right;
+  left: 0px;
+  background: rgb(255, 255, 255);
+  border-radius: 0px 0px 4px 4px;
+  button {
+    margin-left: 8px;
+  }
+}
+.causeItem {
+  display: flex;
+  margin-bottom: 10px;
+  & > div {
+    color: @textPrimary !important;
+    font-size: 16px !important;
+    .openSans-600-n();
+  }
+  & svg {
+    font-size: 24px;
+    margin-right: 12px;
+  }
+}
+.userInfoDrawer {
+  margin-bottom: 40px;
+}
+.percentBlockDrawer {
+  height: 48px;
+  width: 57px;
+  margin: 8px 20px 8px 0;
+}
+@media (max-width: 768px) {
+  .symptomInfoBlock {
+    flex-direction: column-reverse;
+  }
+  .tags {
+    width: 100%;
+  }
+}
+.infoCategory {
+  font-size: 12px;
+  font-style: italic;
+}
+.imgAvatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.medicalDiagnosis {
+  background: #FEC0C0;
+}
+.medicalImage {
+  background: #cc58c7;
+}
+.medicalTest {
+  background: #FBE5C4;
+}
+.healthReport {
+  background: #3cb73e;
+}
+.prescription {
+  background: #23b7b1;
+}
+.insurancereport {
+  background: #D7D3FF;
+}
+.consentandassentform {
+  background: #5fa3ff;
+}
+.other {
+  background: #9c9fa0;
+}
+
+.typeBox {
+  &.medicalDiagnosis {
+    background: rgba(#FD8281, 0.5);
+    border-color: #FD8281;
+    span {
+      background: #FD8281;
+    }
+    svg {
+      fill: #FD8281;
+    }
+  }
+  &.medicalImage {
+    background: rgba(#cc58c7, 0.5);
+    border-color: #cc58c7;
+    span {
+      background: #cc58c7;
+    }
+    svg {
+      fill: #cc58c7;
+    }
+  }
+  &.medicalTest {
+    background: rgba(#F8CC89, 0.5);
+    border-color: #F8CC89;
+    span {
+      background: #F8CC89;
+    }
+    svg {
+      fill: #F8CC89;
+    }
+  }
+  &.healthReport {
+    background: rgba(#3cb73e, 0.5);
+    border-color: #3cb73e;
+    span {
+      background: #3cb73e;
+    }
+    svg {
+      fill: #3cb73e;
+    }
+  }
+  &.prescription {
+    background: rgba(#23b7b1, 0.5);
+    border-color: #23b7b1;
+    span {
+      background: #23b7b1;
+    }
+    svg {
+      fill: #23b7b1;
+    }
+  }
+  &.insurancereport {
+    background: rgba(#AFA8FF, 0.5);
+    border-color: #AFA8FF;
+    span {
+      background: #AFA8FF;
+    }
+    svg {
+      fill: #AFA8FF;
+    }
+  }
+  &.consentandassentform {
+    background: rgba(#5fa3ff, 0.5);
+    border-color: #5fa3ff;
+    span {
+      background: #5fa3ff;
+    }
+    svg {
+      fill: #5fa3ff;
+    }
+  }
+  &.other {
+    background: rgba(#9c9fa0, 0.5);
+    border-color: #9c9fa0;
+    span {
+      background: #9c9fa0;
+    }
+    svg {
+      fill: #9c9fa0;
+    }
+  }
+}
+
+.menuItemBlock span{
+  font-weight: 600;
+  font-size: 14px;
+}
+.sharePrintBlock {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  & button {
+    color: @textPrimary;
+    background: transparent;
+    border: unset;
+    /*text-transform: capitalize;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: unset;
+    @media (max-width: 767px) {
+      height: 35px;
+      font-size: 12px;
+    }
+    & svg {
+      font-size: 20px;
+      @media (max-width: 767px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+.center{
+  text-align: center;
+  margin: 0 auto;
+}
+.modalFooter{
+  padding: 10px 16px;
+  text-align: right;
+  background: transparent;
+  border-top: 1px solid #e8e8e8;
+  border-radius: 0 0 14px 14px;
+  margin: 48px -24px -24px;
+  button + button {
+    margin-left: 8px;
+  }
+}
+
+

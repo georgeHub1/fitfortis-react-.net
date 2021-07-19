@@ -1,0 +1,16 @@
+{
+  "close": "Close",
+  "apply": "Apply",
+  "color": "Color",
+  "goalPlaceholder": "value",
+  "goal": "Goal",
+  "goalMin": "Goal (Min)",
+  "goalMax": "Goal (Max)",
+  "rangeMin": "Min",
+  "rangeMax": "Max",
+  "rangePlaceholder": "value",
+  "toggleGL": "Show goal lines",
+  "toggleMin": "Annotate min entry",
+  "toggleMax": "Annotate max entry",
+  "toggleLast": "Annotate latest entry"
+}

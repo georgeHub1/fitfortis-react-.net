@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DocumentsEntry renders correctly 1`] = `
+<div>
+  <h1
+    className="undefined undefined"
+  />
+  <div>
+    <div
+      className="ant-breadcrumb"
+    />
+  </div>
+</div>
+`;

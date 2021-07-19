@@ -1,0 +1,235 @@
+@import "../../styles/_variables.less";
+
+.menuContainer {
+  margin: 34px 0;
+  min-height: calc(100% - 136px);
+  & .logo {
+    color: @textPrimary;
+    font-weight: 800;
+    margin-top: 0;
+    font-size: 24px;
+    letter-spacing: 0px;
+    font-variant-caps: initial;
+    overflow: hidden;
+    min-width: 27px;
+    margin: 20px;
+    max-height: 27px;
+    transition: width 10s ease-out;
+    @media (max-width: 500px) { 
+      padding-left: 2.5px;
+    }
+  }
+}
+
+.menuContainer
+.menu {
+  width: auto;
+  height: 100%;
+  display: flex;
+  padding-top: 5px;
+  align-items: center;
+  flex-direction: column;
+  border-right: none!important;
+  background: transparent!important;
+  li {
+      @media (max-width: 500px) { 
+        height: 46px !important;
+        padding: 0 5px !important;
+      }
+     a { 
+      span {
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }      
+       @media (max-width: 500px) { 
+          height: 46px;
+        }
+        i {
+          @media (max-width: 500px) { 
+            font-size: 24px !important;
+          }
+        }
+     }
+  }
+}
+
+.contentContainer {
+  margin: 0;
+  padding: 24px 45px;
+  min-height: auto!important;
+  @media (max-width: 767px) { 
+    padding: 0 !important;
+    background: transparent;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+  .contentContainer {
+
+    padding: 24px 20px;
+ 
+  }
+}
+.menuContainer .linkClass {
+  height: 66px;
+  font-weight: 600;
+  color: @textPrimary;
+  display: flex;
+  align-items: center;
+}
+.MainresponsiveFooter {
+  .activeLink {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      left: -12.5px;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-top: 5px solid;
+      width: 50px;
+      margin: 0 auto;
+    }
+    i {
+      opacity: 1 !important;
+    }
+  }
+}
+
+.menuContainer .activeLink,
+.menuContainer .linkClass:hover {
+  background: #335889;
+  border-radius: 12px;
+  color: #fff;
+  height: 100%;
+}
+.linkClass[disabled]{
+  opacity: 0.5;
+}
+
+.sideBar {
+  display: flex;
+}
+
+.menuContainer .navItem {
+  height: 66px!important;
+  font-weight: 900;
+  padding: 0!important;
+  margin: 2px 0 0 !important;
+
+  &:active {
+    background: none
+  }
+}
+
+.triggerContainer {
+  top: 35px;
+  z-index: 9;
+  right: -15px;
+  position: absolute;
+  transition: transform 0.3s ease-out;
+}
+
+.triggerBtn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #fff;
+  color: @textPrimary;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.triggerBtn:hover {
+  color: #fff;
+  background: #335889;
+}
+
+.rotateContainer {
+  transform: rotate(180deg);
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  margin: 16px 21px !important;
+  min-width: 34px!important;
+  border: 2px solid #335889;
+  @media (max-width: 767px) {
+    width: 30px;
+    height: 30px;
+    margin: 16px 0 !important;
+    min-width: 30px!important;
+    border-color: #fff;
+  }
+}
+.sidebar_class{ 
+  padding: 0 20px;
+  background: linear-gradient(to right, #f4f6f7, #f3f5f8) !important;
+  @media (max-width: 767px) {
+    display: none;
+  }
+  @media (max-width: 500px) {
+    padding: 0px; 
+  }
+}
+
+.layout_main{
+  height: 100%;
+}
+
+.backButton{
+  min-width: 30px !important;
+  width: 30px !important;
+  height: 30px !important;
+  i {
+    color: #0e3459;
+  }
+}
+
+.width{
+  width:30px;
+}
+.mobileViewHeaderTitle{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  margin: 0 auto 0 15px !important;
+  text-align: center;
+}
+.termsofuselink {
+  text-align: center;
+  a {
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 12px;
+    cursor: pointer;
+    padding: 16px 21px;
+    display: inline-block;
+    word-break: break-word;
+    &:hover {
+      color: #507196;
+    }
+  }
+  .toslink {
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 12px;
+    cursor: pointer;
+    display: inline-block;
+    word-break: break-word;
+    padding: 16px 5px;
+    &:hover {
+      color: #507196;
+    }
+  }
+}
+.open.termsofuselink {
+  text-align: center;
+  a {
+    padding: 16px 5px;
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "basicInfoLabel": "Basic Information",
+  "birthDateLabel": "Date of birth",
+
+  "sexAtBirthPlaceholder" : "Select sex at birth",
+
+  "genderIdentityPlaceholder": "Select gender identity",
+
+  "ethnicPlaceholder": "Select ethnic origin",
+
+  "ageLabel": "Age",
+  "ageDay": "Day",
+  "ageDays": "Days",
+  "ageMonth": "Month",
+  "ageMonths": "Months",
+  "ageYear": "Year",
+  "ageYears": "Years",
+  "ageDateError": "You cannot select future date",
+  "ageLessThanMonth": "less than 1 month",
+
+  "lifestyleLabel": "Lifestyle",
+  
+  "January": "January",
+  "February": "February",
+  "March": "March",
+  "April": "April",
+  "May": "May",
+  "June": "June",
+  "July": "July",
+  "August": "August",
+  "September": "September",
+  "October": "October",
+  "November": "November",
+  "December": "December"
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="34px" viewBox="0 0 28 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>sidebar/icon/documents normal</title>
+    <desc>Created with Sketch.</desc>
+    <g id="01-Metrics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Fit_Fortis---v7.1-Style" transform="translate(-831.000000, -2520.000000)">
+            <g id="sidebar" transform="translate(787.000000, 2064.000000)">
+                <g id="Group-32" transform="translate(24.000000, 168.000000)">
+                    <g id="Group-Copy-3" transform="translate(0.000000, 272.000000)">
+                        <g id="sidebar/icon/documents-normal" transform="translate(16.000000, 16.000000)">
+                            <g>
+                                <rect id="Rectangle" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="34" height="34"></rect>
+                                <rect id="Rectangle-Copy-5" stroke="#335889" stroke-width="1.584" fill="#FFFFFF" x="11" y="7" width="20" height="26" rx="4"></rect>
+                                <path d="M16,20 C15.4477153,20 15,19.5522847 15,19 C15,18.4477153 15.4477153,18 16,18 L26,18 C26.5522847,18 27,18.4477153 27,19 C27,19.5522847 26.5522847,20 26,20 L16,20 Z" id="Rectangle" fill="#335889"></path>
+                                <rect id="Rectangle" fill="#335889" transform="translate(21.000000, 24.000000) scale(1, -1) translate(-21.000000, -24.000000) " x="15" y="23" width="12" height="2" rx="1"></rect>
+                                <g id="Group-19" transform="translate(5.000000, 1.000000)">
+                                    <rect id="Rectangle" stroke="#335889" stroke-width="1.584" fill="#FFFFFF" x="0" y="0" width="20" height="26" rx="4"></rect>
+                                    <rect id="Rectangle" fill="#335889" x="3" y="5" width="4" height="8"></rect>
+                                    <path d="M5,19 C4.44771525,19 4,18.5522847 4,18 C4,17.4477153 4.44771525,17 5,17 L15,17 C15.5522847,17 16,17.4477153 16,18 C16,18.5522847 15.5522847,19 15,19 L5,19 Z" id="Rectangle" fill="#335889"></path>
+                                    <path d="M7,23 C6.44771525,23 6,22.5522847 6,22 C6,21.4477153 6.44771525,21 7,21 L13,21 C13.5522847,21 14,21.4477153 14,22 C14,22.5522847 13.5522847,23 13,23 L7,23 Z" id="Rectangle" fill="#335889"></path>
+                                    <rect id="Rectangle-Copy-8" fill="#335889" x="8" y="8" width="4" height="5"></rect>
+                                    <rect id="Rectangle-Copy-9" fill="#335889" x="13" y="11" width="4" height="2"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

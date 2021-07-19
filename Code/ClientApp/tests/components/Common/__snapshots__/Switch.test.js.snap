@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch renders correctly 1`] = `
+<div
+  className="responsiveswitcherContainer undefined"
+  onClick={[Function]}
+>
+  <span
+    style={
+      Object {
+        "left": 0,
+      }
+    }
+  />
+  <i
+    aria-label="icon: line-chart"
+    className="anticon anticon-line-chart"
+    style={
+      Object {
+        "color": "#2C3134",
+        "left": "5px",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className=""
+      data-icon="line-chart"
+      fill="currentColor"
+      focusable="false"
+      height="1em"
+      viewBox="64 64 896 896"
+      width="1em"
+    >
+      <path
+        d="M888 792H200V168c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v688c0 4.4 3.6 8 8 8h752c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM305.8 637.7c3.1 3.1 8.1 3.1 11.3 0l138.3-137.6L583 628.5c3.1 3.1 8.2 3.1 11.3 0l275.4-275.3c3.1-3.1 3.1-8.2 0-11.3l-39.6-39.6a8.03 8.03 0 0 0-11.3 0l-230 229.9L461.4 404a8.03 8.03 0 0 0-11.3 0L266.3 586.7a8.03 8.03 0 0 0 0 11.3l39.5 39.7z"
+      />
+    </svg>
+  </i>
+  <i
+    aria-label="icon: table"
+    className="anticon anticon-table"
+    style={
+      Object {
+        "color": "#75838B",
+        "left": "29px",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className=""
+      data-icon="table"
+      fill="currentColor"
+      focusable="false"
+      height="1em"
+      viewBox="64 64 896 896"
+      width="1em"
+    >
+      <path
+        d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 208H676V232h212v136zm0 224H676V432h212v160zM412 432h200v160H412V432zm200-64H412V232h200v136zm-476 64h212v160H136V432zm0-200h212v136H136V232zm0 424h212v136H136V656zm276 0h200v136H412V656zm476 136H676V656h212v136z"
+      />
+    </svg>
+  </i>
+</div>
+`;

@@ -1,0 +1,21 @@
+{
+    "createAccount": "Създай Профил",
+    "welcome": "Добре дошли във Fit Fortis!",
+    "labelFirstName": "Име",
+    "labelLastName": "Фамилия",
+    "labelEmail": "Имейл",
+    "labelPassword": "Парола",
+    "signInBtn": "Вход",
+    "emptyInput": "Не може да бъде празно!",
+    "invalidEmail": "Невалиден имейл!",
+    "invalidPassword": "Паролата трябва да съдържа поне 8 символа!",
+    "confirmYourEmailAddress": "Потвърди имейла си.",
+    "pleaseCheckYourInboxOrJunk": "Моля, провери електронната си поща за имейл от support@fitfortis.com.",
+    "youNeedToClickTheLink": "Трябва да кликнеш на линка, който ти изпратихме, за да потвърдиш имейла си преди да можеш да влезеш в сайта.",
+    "goToSignIn": "КЪМ ВХОДА",
+    "alphanumericError": "Паролите трябва да имат поне една цифра ('0' - '9').",
+    "characterError": "Паролите трябва да имат поне един не буквено-цифров символ.",
+    "lowercaseError": "Паролите трябва да имат поне една малка буква ('a' - 'z').",
+    "uppercaseError": "Паролите трябва да имат поне една главна буква ('A' - 'Z').",
+    "termsOfUse": "Условия за ползване"
+}

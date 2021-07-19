@@ -1,0 +1,250 @@
+@import "../../styles/_variables.less";
+
+// Tooltip
+.dateLabel {
+  position: absolute;
+  bottom: -10px;
+  margin-left: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  color: #000;
+}
+
+// Switch style
+.switcherContainer {
+  width: 48px;
+  height: 24px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: relative;
+  margin-right: 18px;
+  background: #F4F6F7;
+  font-size: 16px !important;
+}
+
+.pointer {
+  top: 0px;
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  position: absolute;
+  background: #FFFFFF;
+  transition: left 0.3s ease-out;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  top: 5px;
+  z-index: 9;
+  position: absolute;
+  transition: color 0.3s ease-out;
+}
+
+// CARD styles
+.cardContainer {
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.0956465);
+}
+
+// Charts styles
+.legendLabel {
+  .openSans-600-n;
+  font-size: 13px;
+  color: @textPrimary;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: calc(100% - 19px);
+}
+
+.legendIcon {
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+  border: 3px solid;
+  border-radius: 50%;
+}
+
+.legendContainer {
+  display: flex;
+  cursor: pointer;
+  max-width: 130px;
+  align-items: center;
+}
+
+.metricName {
+  color: #003459;
+  font-size: 13px;
+  .openSans-600-n;
+}
+
+.metricVal {
+  font-size: 13px;
+  .openSans-600-n;
+}
+
+// DropDow
+.dropDownLink {
+  border-radius: 14px;
+  background-color: #f4f6f7;
+  color: #003459;
+  line-height: 1.43;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  &:last-child {
+    margin-left: 7px;
+  }
+  @media (max-width: 767px) { 
+    width: 33.33%;
+    margin: 10px auto;
+  }
+}
+
+.dropDownItem {
+  text-align: center
+}
+
+// DatePicker
+.DatePickerContainer {
+  display: flex;
+  font-size: 14px;
+  .openSans-600-n;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.DatePickerDateContainer {
+  width: 250px;
+  height: 40px;
+  display: flex;
+  cursor: pointer;
+  border-radius: 14px;
+  align-items: center;
+  background-color: #f4f6f7;
+  justify-content: space-between;
+}
+
+.DatePickerChangeDaysBtn {
+  width: 30px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.DatePickerValue {
+  width: 190px;
+  padding: 5px;
+  font-size: 14px;
+  color: #003459;
+  user-select: none;
+  text-align: center;
+  display: inline-block;
+}
+.WrapResponsiveContainer {
+  border-radius: 0px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  margin: 0;
+  padding: 0;
+}
+.timeBlock {
+  display: flex;
+  align-items: center;
+}
+
+.customButtonTooltipActivated{
+  background-color: #fff !important;;
+  border: 1px solid #d9d9d9 !important;
+}
+
+.CommonAlertMsg .title span {
+  font-size: 18px;
+  line-height: 26px;
+  color: #003459;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.CommonAlertMsg .descriptionHeader {
+  margin: 15px 0 0;
+}
+.CommonAlertMsg .descriptionHeader span {
+  font-size: 14px;
+  color: #003459;
+  font-weight: 400;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.CommonAlertMsg .descriptionContent {
+   margin: 0 0 15px;
+}
+.CommonAlertMsg .descriptionContent span {
+  font-size: 14px;
+  color: #003459;
+  font-weight: 400;
+}
+.CommonAlertMsg .CommonAlertButton {
+  margin-bottom: 0;
+  border-color: #335889;
+  background: #335889;
+  color: #fff;
+  height: 44px;
+  font-size: 15px;
+  font-weight: 700;
+  min-width: 234px;
+}
+.CommonAlertMsg .CommonAlertButton:hover {
+  background: #507196;
+  border-color: #507196;
+  color: #fff;
+}
+.CommonAlertMsg {
+  padding: 15px !important;
+  background-color: #e6f7ff;
+  border: 1px solid #91d5ff;
+  margin-bottom: 30px;
+  border-radius: 14px;
+}
+.TermsOffUse {
+  .title {
+    @media (max-width: 767px){
+      display: none;
+    }
+    h1 {
+        font-size: 32px;
+        margin-bottom: 24px;
+        margin-top: 24px;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        color: #003459;
+    }
+  }
+  h2 {
+    font-size: 26px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 15px;
+  }
+  span {
+    margin-bottom: 15px;
+    width: 100%;
+    display: inline-block;
+  }
+}
+.chartItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 767px) {
+      width: 100% !important;
+    }
+
+    & > div {
+        width: 100%;
+    }
+}
+.chartContainer {
+    margin-bottom: 0px;
+}

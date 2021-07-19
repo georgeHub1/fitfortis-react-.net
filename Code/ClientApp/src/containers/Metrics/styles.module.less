@@ -1,0 +1,67 @@
+@import '../../styles/_variables.less';
+@import '../../styles/_fonts.less';
+
+.headerNoSelected {
+    .openSans-700-n();
+    padding-top: 8px;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.chartContainer {
+    margin-bottom: 20px;
+    & > div {
+        & > div:nth-child(2) {
+            padding-top: 0;
+        }
+    }
+}
+.addOne {
+    padding-bottom: 24px;
+}
+.paragraphInfo {
+    color: @infoGray;
+    min-height: 42px;
+    .openSans-400-n();
+    margin-bottom: 0;
+  }
+.spinnerContainer {
+    display: flex;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+}
+.Metricsheader {
+  font-size: 32px;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  /*text-transform: capitalize;*/
+  color: @textPrimary;
+  @media (max-width: 767px) { 
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    display: none;
+  }
+}
+
+.MainMetricsHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.AddNewChartBtn {
+  background-color: transparent !important; 
+  @media (max-width: 767px) { 
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EncyclopediaTermEntry renders correctly 1`] = `
+<div
+  className="undefined EncyclopediaEntry"
+>
+  <div>
+    <h1>
+      
+    </h1>
+    <div>
+      <div>
+        <button
+          className="ant-btn ant-dropdown-trigger ant-btn-primary"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onTouchStart={[Function]}
+          type="button"
+        >
+          <i
+            className="anticon"
+          >
+            <svg
+              aria-hidden={true}
+              className=""
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              width="1em"
+            >
+              share.svg
+            </svg>
+          </i>
+        </button>
+        <button
+          className="ant-btn ant-btn-primary"
+          onClick={[Function]}
+          type="button"
+        >
+          <i
+            className="anticon"
+          >
+            <svg
+              aria-hidden={true}
+              className=""
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              width="1em"
+            >
+              print.svg
+            </svg>
+          </i>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div
+    className="EncyclopediaEntryCustomCard"
+  >
+    <div
+      className="ant-card undefined customCardContainer ant-card-bordered"
+      style={
+        Object {
+          "background": "rgba(255, 255, 255, 0.8)",
+        }
+      }
+    >
+      <div
+        className="ant-card-body"
+        style={Object {}}
+      >
+        <h1
+          className="undefined undefined"
+        />
+        <div>
+          <div>
+            
+            <div
+              tabIndex="0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

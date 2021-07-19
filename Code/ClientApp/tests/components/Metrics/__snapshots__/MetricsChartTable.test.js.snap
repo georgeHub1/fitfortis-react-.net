@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MetricsChartTable renders correctly 1`] = `
+<div
+  className="metricsTimeLineSection"
+  style={
+    Object {
+      "borderRadius": "0px",
+      "padding": "0px",
+      "width": "97%",
+    }
+  }
+>
+  <div
+    className="no-data-table detailViewTable"
+  >
+    <div
+      className="ant-table-wrapper"
+    >
+      <div
+        className="ant-spin-nested-loading"
+      >
+        <div
+          className="ant-spin-container"
+        >
+          <div
+            className="ant-table ant-table-default ant-table-empty ant-table-fixed-header ant-table-scroll-position-left ant-table-layout-fixed"
+            style={Object {}}
+          >
+            <div
+              className="ant-table-content"
+            >
+              <div
+                className="ant-table-scroll"
+              >
+                <div
+                  className="ant-table-header"
+                  onScroll={[Function]}
+                  style={Object {}}
+                >
+                  <table
+                    className=""
+                    style={Object {}}
+                  >
+                    <colgroup>
+                      <col
+                        style={
+                          Object {
+                            "minWidth": 210,
+                            "width": 210,
+                          }
+                        }
+                      />
+                      <col
+                        style={
+                          Object {
+                            "minWidth": undefined,
+                            "width": undefined,
+                          }
+                        }
+                      />
+                    </colgroup>
+                    <thead
+                      className="ant-table-thead"
+                    >
+                      <tr
+                        style={
+                          Object {
+                            "height": null,
+                          }
+                        }
+                      >
+                        <th
+                          className="ant-table-row-cell-break-word"
+                        >
+                          <span
+                            className="ant-table-header-column"
+                          >
+                            <div>
+                              <span
+                                className="ant-table-column-title"
+                              >
+                                <span
+                                  onClick={[Function]}
+                                >
+                                  <i
+                                    aria-label="icon: down"
+                                    className="anticon anticon-down"
+                                  >
+                                    <svg
+                                      aria-hidden="true"
+                                      className=""
+                                      data-icon="down"
+                                      fill="currentColor"
+                                      focusable="false"
+                                      height="1em"
+                                      viewBox="64 64 896 896"
+                                      width="1em"
+                                    >
+                                      <path
+                                        d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                                      />
+                                    </svg>
+                                  </i>
+                                </span>
+                              </span>
+                              <span
+                                className="ant-table-column-sorter"
+                              />
+                            </div>
+                          </span>
+                        </th>
+                        <th
+                          className="ant-table-row-cell-last"
+                        >
+                          <span
+                            className="ant-table-header-column"
+                          >
+                            <div>
+                              <span
+                                className="ant-table-column-title"
+                              >
+                                
+                              </span>
+                              <span
+                                className="ant-table-column-sorter"
+                              />
+                            </div>
+                          </span>
+                        </th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+                <div
+                  className="ant-table-body"
+                  onScroll={[Function]}
+                  onWheel={[Function]}
+                  style={
+                    Object {
+                      "maxHeight": 240,
+                      "overflowY": "scroll",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <table
+                    className=""
+                    style={Object {}}
+                  >
+                    <colgroup>
+                      <col
+                        style={
+                          Object {
+                            "minWidth": 210,
+                            "width": 210,
+                          }
+                        }
+                      />
+                      <col
+                        style={
+                          Object {
+                            "minWidth": undefined,
+                            "width": undefined,
+                          }
+                        }
+                      />
+                    </colgroup>
+                    <tbody
+                      className="ant-table-tbody"
+                    />
+                  </table>
+                </div>
+                <div
+                  className="ant-table-placeholder"
+                >
+                  <div
+                    className="ant-empty ant-empty-normal"
+                  >
+                    <div
+                      className="ant-empty-image"
+                    >
+                      <svg
+                        height="41"
+                        viewBox="0 0 64 41"
+                        width="64"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g
+                          fill="none"
+                          fillRule="evenodd"
+                          transform="translate(0 1)"
+                        >
+                          <ellipse
+                            cx="32"
+                            cy="33"
+                            fill="#F5F5F5"
+                            rx="32"
+                            ry="7"
+                          />
+                          <g
+                            fillRule="nonzero"
+                            stroke="#D9D9D9"
+                          >
+                            <path
+                              d="M55 12.76L44.854 1.258C44.367.474 43.656 0 42.907 0H21.093c-.749 0-1.46.474-1.947 1.257L9 12.761V22h46v-9.24z"
+                            />
+                            <path
+                              d="M41.613 15.931c0-1.605.994-2.93 2.227-2.931H55v18.137C55 33.26 53.68 35 52.05 35h-40.1C10.32 35 9 33.259 9 31.137V13h11.16c1.233 0 2.227 1.323 2.227 2.928v.022c0 1.605 1.005 2.901 2.237 2.901h14.752c1.232 0 2.237-1.308 2.237-2.913v-.007z"
+                              fill="#FAFAFA"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <p
+                      className="ant-empty-description"
+                    >
+                      No Data
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

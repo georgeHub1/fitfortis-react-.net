@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AvailableMetric renders correctly 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        <div>
+          <span>
+            <span
+              style={Object {}}
+            >
+              
+            </span>
+          </span>
+        </div>
+        <button
+          className="ant-btn ant-btn-primary"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          type="button"
+        >
+          <span>
+            ?
+          </span>
+        </button>
+      </div>
+      <button
+        className="ant-btn ant-btn-primary"
+        onClick={[Function]}
+        type="button"
+      />
+    </div>
+  </div>
+</div>
+`;

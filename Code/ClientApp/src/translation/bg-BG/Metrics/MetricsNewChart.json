@@ -1,0 +1,15 @@
+{
+  "deleteBtn": "nc_Махни",
+  "closeBtn": "nc_Затвори",
+  "addBtn": "nc_Добави",
+  "searchPlaceholder": "nc_Търси",
+  "addNewChart": "nc_Добави нова графика",
+  "availableMetric": "nc_налични показатели",
+  "availableMetrics": "nc_available metrics",
+
+  "selectedChart": "избрана графика",
+  "selectedCharts": "избрани графики",
+  "findNewChart": "Добави нова графика",
+  "chooseOne": "Избраните графики ще се появят тук. Използвай другата секция за да търсиш и избираш налични графики.",
+  "chartIsEmpty":"Диаграмата е празна"
+}

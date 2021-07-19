@@ -1,0 +1,711 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AmericanIndianOrAlaskaNativeENUS" xml:space="preserve">
+    <value>American Indian or Alaska Native</value>
+  </data>
+  <data name="ApiModelValidation" xml:space="preserve">
+    <value>ApiModelValidation</value>
+  </data>
+  <data name="AsianENUS" xml:space="preserve">
+    <value>Asian</value>
+  </data>
+  <data name="AsianUKUA" xml:space="preserve">
+    <value>Азіатський</value>
+  </data>
+  <data name="BlackAfricanENUS" xml:space="preserve">
+    <value>Black African</value>
+  </data>
+  <data name="BlackCaribbeanENUS" xml:space="preserve">
+    <value>Black Caribbean</value>
+  </data>
+  <data name="ConcurrencyUpdate" xml:space="preserve">
+    <value>ConcurrencyUpdate</value>
+  </data>
+  <data name="CustomENUS" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="CustomUKUA" xml:space="preserve">
+    <value>Користувацька</value>
+  </data>
+  <data name="DataConflict" xml:space="preserve">
+    <value>DataConflict</value>
+  </data>
+  <data name="EmailAlreadyConfirmed" xml:space="preserve">
+    <value>This email has been already confirmed</value>
+  </data>
+  <data name="EmailWasNotConfirmedYet" xml:space="preserve">
+    <value>Please confirm your email address. We just re-sent the request.</value>
+  </data>
+  <data name="EntityNotExists" xml:space="preserve">
+    <value>The {0} {1} does not exist.</value>
+  </data>
+  <data name="EntityNotFound" xml:space="preserve">
+    <value>EntityNotFound</value>
+  </data>
+  <data name="EntityValidationError" xml:space="preserve">
+    <value>EntityValidationError</value>
+  </data>
+  <data name="EveryDayWithAndWithoutMealENUS" xml:space="preserve">
+    <value>Every day with and without meal</value>
+  </data>
+  <data name="EveryDayWithAndWithoutMealUKUA" xml:space="preserve">
+    <value>Кожного дня з їжею та без</value>
+  </data>
+  <data name="FailedToConnect" xml:space="preserve">
+    <value>FailedToConnect</value>
+  </data>
+  <data name="FemaleENUS" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="FemaleUKUA" xml:space="preserve">
+    <value>Жіноча</value>
+  </data>
+  <data name="HighDosageOfAlсoholDailyENUS" xml:space="preserve">
+    <value>High dosage of alсohol daily</value>
+  </data>
+  <data name="HighDosageOfAlсoholDailyUKUA" xml:space="preserve">
+    <value>Велика доза алкоголю щодня</value>
+  </data>
+  <data name="HispanicOrLatinoENUS" xml:space="preserve">
+    <value>Hispanic or Latino</value>
+  </data>
+  <data name="HttpsRequired" xml:space="preserve">
+    <value>HttpsRequired</value>
+  </data>
+  <data name="IndianENUS" xml:space="preserve">
+    <value>Indian</value>
+  </data>
+  <data name="IndianUKUA" xml:space="preserve">
+    <value>Індійська</value>
+  </data>
+  <data name="IntensivelyENUS" xml:space="preserve">
+    <value>More than 5 hours/week</value>
+  </data>
+  <data name="IntensivelyUKUA" xml:space="preserve">
+    <value>Більше ніж 5 год/тиждень</value>
+  </data>
+  <data name="IntersexENUS" xml:space="preserve">
+    <value>Intersex</value>
+  </data>
+  <data name="IntersexUKUA" xml:space="preserve">
+    <value>Інтерсексуальна</value>
+  </data>
+  <data name="LessTenPerDayENUS" xml:space="preserve">
+    <value>&lt; 10 / day</value>
+  </data>
+  <data name="LessTenPerDayUKUA" xml:space="preserve">
+    <value>&lt; 10 / день</value>
+  </data>
+  <data name="LowIntensityENUS" xml:space="preserve">
+    <value>Less than 1.5 hours/week</value>
+  </data>
+  <data name="LowIntensityUKUA" xml:space="preserve">
+    <value>Менше ніж 1.5 год/тиждень</value>
+  </data>
+  <data name="MaleENUS" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="MaleUKUA" xml:space="preserve">
+    <value>Чоловіча</value>
+  </data>
+  <data name="MiddleEasternENUS" xml:space="preserve">
+    <value>Middle Eastern</value>
+  </data>
+  <data name="ModeratelyENUS" xml:space="preserve">
+    <value>1.5-5 hours/week</value>
+  </data>
+  <data name="ModeratelyUKUA" xml:space="preserve">
+    <value>1.5-5 год/тиждень</value>
+  </data>
+  <data name="MoreTenPerDayENUS" xml:space="preserve">
+    <value>&gt; 10 / day</value>
+  </data>
+  <data name="MoreTenPerDayUKUA" xml:space="preserve">
+    <value>&gt; 10 / день</value>
+  </data>
+  <data name="NativeHawaiianOrPacificIslanderENUS" xml:space="preserve">
+    <value>Native Hawaiian or Pacific Islander</value>
+  </data>
+  <data name="NoBGBG" xml:space="preserve">
+    <value>He</value>
+  </data>
+  <data name="NoENUS" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NormalENUS" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="NormalUKUA" xml:space="preserve">
+    <value>Звичайна</value>
+  </data>
+  <data name="NoUKUA" xml:space="preserve">
+    <value>Ні</value>
+  </data>
+  <data name="OccasionallyWithMealsENUS" xml:space="preserve">
+    <value>Occasionally with meals</value>
+  </data>
+  <data name="OccasionallyWithMealsUKUA" xml:space="preserve">
+    <value>Іноді з їжею</value>
+  </data>
+  <data name="PastSmokerENUS" xml:space="preserve">
+    <value>Past smoker</value>
+  </data>
+  <data name="PastSmokerUKUA" xml:space="preserve">
+    <value>Колишній курець</value>
+  </data>
+  <data name="PermissionDenied" xml:space="preserve">
+    <value>PermissionDenied</value>
+  </data>
+  <data name="PipeENUS" xml:space="preserve">
+    <value>Pipe</value>
+  </data>
+  <data name="PipeUKUA" xml:space="preserve">
+    <value>Люлька</value>
+  </data>
+  <data name="RequestBodyNotFound" xml:space="preserve">
+    <value>RequestBodyNotFound</value>
+  </data>
+  <data name="ServiceWasNotInitialized" xml:space="preserve">
+    <value>ServiceWasNotInitialized</value>
+  </data>
+  <data name="UserEmailExists" xml:space="preserve">
+    <value>User with email '{0}' has been already registered.</value>
+  </data>
+  <data name="UserNotBelongToCompany" xml:space="preserve">
+    <value>User {0} does not belong to Person {1}</value>
+  </data>
+  <data name="VeganENUS" xml:space="preserve">
+    <value>Vegan</value>
+  </data>
+  <data name="VeganUKUA" xml:space="preserve">
+    <value>Веганський</value>
+  </data>
+  <data name="VegetarianENUS" xml:space="preserve">
+    <value>Vegetarian</value>
+  </data>
+  <data name="VegetarianUKUA" xml:space="preserve">
+    <value>Вегетаріанський</value>
+  </data>
+  <data name="WhiteOrCaucasianENUS" xml:space="preserve">
+    <value>White or Caucasian</value>
+  </data>
+  <data name="WrongLoginInfo" xml:space="preserve">
+    <value>Wrong email or password.</value>
+  </data>
+  <data name="WrongSortedFieldName" xml:space="preserve">
+    <value>WrongSortedFieldName</value>
+  </data>
+  <data name="BasicInformationENUS" xml:space="preserve">
+    <value>Basic Information</value>
+  </data>
+  <data name="BasicInformationUKUA" xml:space="preserve">
+    <value>Загальна інформація</value>
+  </data>
+  <data name="LifestyleENUS" xml:space="preserve">
+    <value>Lifestyle</value>
+  </data>
+  <data name="LifestyleUKUA" xml:space="preserve">
+    <value>Стиль життя</value>
+  </data>
+  <data name="AdultBGBG" xml:space="preserve">
+    <value>Терапия за възрастни</value>
+  </data>
+  <data name="AdultENUS" xml:space="preserve">
+    <value>Adult</value>
+  </data>
+  <data name="AdultUKUA" xml:space="preserve">
+    <value>Дорослі</value>
+  </data>
+  <data name="AllergiesBGBG" xml:space="preserve">
+    <value>Алергии</value>
+  </data>
+  <data name="AllergiesENUS" xml:space="preserve">
+    <value>Allergies</value>
+  </data>
+  <data name="AllergiesUKUA" xml:space="preserve">
+    <value>Алергія</value>
+  </data>
+  <data name="BloodBGBG" xml:space="preserve">
+    <value>Кръв</value>
+  </data>
+  <data name="BloodENUS" xml:space="preserve">
+    <value>Blood</value>
+  </data>
+  <data name="BloodUKUA" xml:space="preserve">
+    <value>Кров</value>
+  </data>
+  <data name="NervousSystemPsychologicalBGBG" xml:space="preserve">
+    <value>Нервна система</value>
+  </data>
+  <data name="NervousSystemPsychologicalENUS" xml:space="preserve">
+    <value>Nervous System &amp; Psychological</value>
+  </data>
+  <data name="NervousSystemPsychologicalUKUA" xml:space="preserve">
+    <value>Нервова система та психологія</value>
+  </data>
+  <data name="CancerBGBG" xml:space="preserve">
+    <value>Рак</value>
+  </data>
+  <data name="CancerENUS" xml:space="preserve">
+    <value>Cancer</value>
+  </data>
+  <data name="CancerUKUA" xml:space="preserve">
+    <value>Рак</value>
+  </data>
+  <data name="ChildhoodBGBG" xml:space="preserve">
+    <value>Терапия за деца</value>
+  </data>
+  <data name="ChildhoodENUS" xml:space="preserve">
+    <value>Childhood</value>
+  </data>
+  <data name="ChildhoodUKUA" xml:space="preserve">
+    <value>Дитячі</value>
+  </data>
+  <data name="DigestiveSystemBGBG" xml:space="preserve">
+    <value>Храносмилателна система</value>
+  </data>
+  <data name="DigestiveSystemENUS" xml:space="preserve">
+    <value>Digestive System</value>
+  </data>
+  <data name="DigestiveSystemUKUA" xml:space="preserve">
+    <value>Система травлення</value>
+  </data>
+  <data name="EndocrineBGBG" xml:space="preserve">
+    <value>Ендокринна система</value>
+  </data>
+  <data name="EndocrineENUS" xml:space="preserve">
+    <value>Endocrine</value>
+  </data>
+  <data name="EndocrineUKUA" xml:space="preserve">
+    <value>Ендокринна</value>
+  </data>
+  <data name="GeneralBGBG" xml:space="preserve">
+    <value>Общи заболявания</value>
+  </data>
+  <data name="GeneralENUS" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="GeneralUKUA" xml:space="preserve">
+    <value>Загальні</value>
+  </data>
+  <data name="GeneticBGBG" xml:space="preserve">
+    <value>Генетични</value>
+  </data>
+  <data name="GeneticENUS" xml:space="preserve">
+    <value>Genetic </value>
+  </data>
+  <data name="GeneticUKUA" xml:space="preserve">
+    <value>Генетика</value>
+  </data>
+  <data name="FemaleReproductiveSystemBGBG" xml:space="preserve">
+    <value>Женска репродуктивна система</value>
+  </data>
+  <data name="FemaleReproductiveSystemENUS" xml:space="preserve">
+    <value>Female Reproductive System</value>
+  </data>
+  <data name="FemaleReproductiveSystemUKUA" xml:space="preserve">
+    <value>Жіноча репродуктивна система</value>
+  </data>
+  <data name="HeadBGBG" xml:space="preserve">
+    <value>Уши, нос, очи</value>
+  </data>
+  <data name="HeadENUS" xml:space="preserve">
+    <value>Ears, nose,eyes</value>
+  </data>
+  <data name="HeadUKUA" xml:space="preserve">
+    <value>Вуха, ніс, очі</value>
+  </data>
+  <data name="HeartBGBG" xml:space="preserve">
+    <value>Cърце</value>
+  </data>
+  <data name="HeartENUS" xml:space="preserve">
+    <value>Heart</value>
+  </data>
+  <data name="HeartUKUA" xml:space="preserve">
+    <value>Серце</value>
+  </data>
+  <data name="JointsBonesBGBG" xml:space="preserve">
+    <value>Стави и кости</value>
+  </data>
+  <data name="JointsBonesENUS" xml:space="preserve">
+    <value>Joints &amp; bones</value>
+  </data>
+  <data name="JointsBonesUKUA" xml:space="preserve">
+    <value>Суглоби та кістки</value>
+  </data>
+  <data name="UrinarySystemBGBG" xml:space="preserve">
+    <value>Пикочна система</value>
+  </data>
+  <data name="UrinarySystemENUS" xml:space="preserve">
+    <value>Urinary system</value>
+  </data>
+  <data name="UrinarySystemUKUA" xml:space="preserve">
+    <value>Сечовидільна система</value>
+  </data>
+  <data name="LiverBGBG" xml:space="preserve">
+    <value>Черен дроб</value>
+  </data>
+  <data name="LiverENUS" xml:space="preserve">
+    <value>Liver</value>
+  </data>
+  <data name="LiverUKUA" xml:space="preserve">
+    <value>Печінка</value>
+  </data>
+  <data name="LongTermTherapyBGBG" xml:space="preserve">
+    <value>Дългосрочна терапия</value>
+  </data>
+  <data name="LongTermTherapyENUS" xml:space="preserve">
+    <value>Long Term Therapy</value>
+  </data>
+  <data name="LongTermTherapyUKUA" xml:space="preserve">
+    <value>Довготривала терапія</value>
+  </data>
+  <data name="LungBGBG" xml:space="preserve">
+    <value>Бял дроб</value>
+  </data>
+  <data name="LungENUS" xml:space="preserve">
+    <value>Lung</value>
+  </data>
+  <data name="LungUKUA" xml:space="preserve">
+    <value>Легені</value>
+  </data>
+  <data name="OtherBGBG" xml:space="preserve">
+    <value>Друг</value>
+  </data>
+  <data name="OtherENUS" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="OtherUKUA" xml:space="preserve">
+    <value>Інше</value>
+  </data>
+  <data name="PsychiatricDisordersBGBG" xml:space="preserve">
+    <value>Психични разстройства</value>
+  </data>
+  <data name="PsychiatricDisordersENUS" xml:space="preserve">
+    <value>Psychiatric disorders</value>
+  </data>
+  <data name="PsychiatricDisordersUKUA" xml:space="preserve">
+    <value>Психічні розлади</value>
+  </data>
+  <data name="TransplantBGBG" xml:space="preserve">
+    <value>Трансплантации</value>
+  </data>
+  <data name="TransplantENUS" xml:space="preserve">
+    <value>Transplant</value>
+  </data>
+  <data name="TransplantUKUA" xml:space="preserve">
+    <value>Пересадка</value>
+  </data>
+  <data name="AmericanIndianOrAlaskaNativeUKUA" xml:space="preserve">
+    <value>Корінні народи Америки та Аляски</value>
+  </data>
+  <data name="BlackAfricanUKUA" xml:space="preserve">
+    <value>Народи країн Африки</value>
+  </data>
+  <data name="BlackCaribbeanUKUA" xml:space="preserve">
+    <value>Народи островів Карибського моря</value>
+  </data>
+  <data name="HispanicOrLatinoUKUA" xml:space="preserve">
+    <value>Латиноамериканці</value>
+  </data>
+  <data name="MiddleEasternUKUA" xml:space="preserve">
+    <value>Народи країн Середнього Сходу</value>
+  </data>
+  <data name="NativeHawaiianOrPacificIslanderUKUA" xml:space="preserve">
+    <value>Гавайці</value>
+  </data>
+  <data name="WhiteOrCaucasianUKUA" xml:space="preserve">
+    <value>Вихідці з країн Європи</value>
+  </data>
+  <data name="FemaleBGBG" xml:space="preserve">
+    <value>Жена</value>
+  </data>
+  <data name="IntersexBGBG" xml:space="preserve">
+    <value>Интерсекс</value>
+  </data>
+  <data name="MaleBGBG" xml:space="preserve">
+    <value>Мъж</value>
+  </data>
+  <data name="CustomBGBG" xml:space="preserve">
+    <value>Друга</value>
+  </data>
+  <data name="EveryDayWithAndWithoutMealBGBG" xml:space="preserve">
+    <value>Всеки ден</value>
+  </data>
+  <data name="HighDosageOfAlсoholDailyBGBG" xml:space="preserve">
+    <value>Всеки ден (високи дози)</value>
+  </data>
+  <data name="IntensivelyBGBG" xml:space="preserve">
+    <value>Повече от 5 часа / седмица</value>
+  </data>
+  <data name="LessTenPerDayBGBG" xml:space="preserve">
+    <value>&lt; 10 цигари / ден</value>
+  </data>
+  <data name="LowIntensityBGBG" xml:space="preserve">
+    <value>По-малко от 1.5 часа / седмица</value>
+  </data>
+  <data name="ModeratelyBGBG" xml:space="preserve">
+    <value>1.5 до 5 часа / седмица</value>
+  </data>
+  <data name="MoreTenPerDayBGBG" xml:space="preserve">
+    <value>&gt; 10 цигари / ден</value>
+  </data>
+  <data name="NormalBGBG" xml:space="preserve">
+    <value>Нормална диета</value>
+  </data>
+  <data name="OccasionallyWithMealsBGBG" xml:space="preserve">
+    <value>Понякога по време на хранене</value>
+  </data>
+  <data name="PastSmokerBGBG" xml:space="preserve">
+    <value>Бивш пушач</value>
+  </data>
+  <data name="PipeBGBG" xml:space="preserve">
+    <value>Лула</value>
+  </data>
+  <data name="VeganBGBG" xml:space="preserve">
+    <value>Веганство</value>
+  </data>
+  <data name="VegetarianBGBG" xml:space="preserve">
+    <value>Вегетарианство</value>
+  </data>
+  <data name="WithEveryMealBGBG" xml:space="preserve">
+    <value>С всяко хранене</value>
+  </data>
+  <data name="WithEveryMealENUS" xml:space="preserve">
+    <value>With Every Meal</value>
+  </data>
+  <data name="WithEveryMealUKUA" xml:space="preserve">
+    <value>З кожним харчуванням</value>
+  </data>
+  <data name="AmericanIndianOrAlaskaNativeBGBG" xml:space="preserve">
+    <value>Американски индианец или индианец от Аляска</value>
+  </data>
+  <data name="AsianBGBG" xml:space="preserve">
+    <value>Азиатски (монголоиден)</value>
+  </data>
+  <data name="BlackAfricanBGBG" xml:space="preserve">
+    <value>Черноафрикански (негроиден)</value>
+  </data>
+  <data name="BlackCaribbeanBGBG" xml:space="preserve">
+    <value>Черен от Карибския басейн</value>
+  </data>
+  <data name="HispanicOrLatinoBGBG" xml:space="preserve">
+    <value>Латиноамерикански</value>
+  </data>
+  <data name="IndianBGBG" xml:space="preserve">
+    <value>Индийски</value>
+  </data>
+  <data name="MiddleEasternBGBG" xml:space="preserve">
+    <value>Средноизточен</value>
+  </data>
+  <data name="NativeHawaiianOrPacificIslanderBGBG" xml:space="preserve">
+    <value>Хавайски или полинезийски</value>
+  </data>
+  <data name="WhiteOrCaucasianBGBG" xml:space="preserve">
+    <value>Бял (европеиден)</value>
+  </data>
+  <data name="MetabolicBGBG" xml:space="preserve">
+    <value>Метаболични</value>
+  </data>
+  <data name="MetabolicENUS" xml:space="preserve">
+    <value>Metabolic</value>
+  </data>
+  <data name="MetabolicUKUA" xml:space="preserve">
+    <value>Метаболічні</value>
+  </data>
+  <data name="SkinAutoimmuneBGBG" xml:space="preserve">
+    <value>Кожни и автоимунни</value>
+  </data>
+  <data name="SkinAutoimmuneENUS" xml:space="preserve">
+    <value>Skin &amp; Autoimmune</value>
+  </data>
+  <data name="SkinAutoimmuneUKUA" xml:space="preserve">
+    <value>Шкіра та аутоімунні</value>
+  </data>
+  <data name="MaleReproductiveBGBG" xml:space="preserve">
+    <value>Мъжка репродуктивна система</value>
+  </data>
+  <data name="MaleReproductiveENUS" xml:space="preserve">
+    <value>Male reproductive</value>
+  </data>
+  <data name="MaleReproductiveUKUA" xml:space="preserve">
+    <value>Чоловічий репродуктивна </value>
+  </data>
+  <data name="OtherConditionsBGBG" xml:space="preserve">
+    <value>Други заболявания</value>
+  </data>
+  <data name="OtherConditionsENUS" xml:space="preserve">
+    <value>Other conditions</value>
+  </data>
+  <data name="OtherConditionsUKUA" xml:space="preserve">
+    <value>Інші захворювання</value>
+  </data>
+  <data name="AccounNotExistBGBG" xml:space="preserve">
+    <value>Няма имейл с този имейл. Моля, проверете имейла, който сте предоставили.</value>
+  </data>
+  <data name="AccounNotExistENUS" xml:space="preserve">
+    <value>There is no account with that email. Please check the email that you provided.</value>
+  </data>
+  <data name="AccounNotExistUKUA" xml:space="preserve">
+    <value>Немає облікового запису з цим електронним адресом. Перевірте вказану вами електронну адресу</value>
+  </data>
+  <data name="A" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="Ab" xml:space="preserve">
+    <value>AB</value>
+  </data>
+  <data name="B" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="NegativeBGBG" xml:space="preserve">
+    <value>Негативен (-)</value>
+  </data>
+  <data name="NegativeENUS" xml:space="preserve">
+    <value>Negative (-)</value>
+  </data>
+  <data name="NegativeUKUA" xml:space="preserve">
+    <value>Негативна (-)</value>
+  </data>
+  <data name="O" xml:space="preserve">
+    <value>O</value>
+  </data>
+  <data name="PositiveBGBG" xml:space="preserve">
+    <value>Положителен (+)</value>
+  </data>
+  <data name="PositiveENUS" xml:space="preserve">
+    <value>Positive (+)</value>
+  </data>
+  <data name="PositiveUKUA" xml:space="preserve">
+    <value>Позитивна (+)</value>
+  </data>
+  <data name="YesBGBG" xml:space="preserve">
+    <value>да</value>
+  </data>
+  <data name="YesEN" xml:space="preserve">
+    <value>yes</value>
+  </data>
+  <data name="YesENUS" xml:space="preserve">
+    <value>yes</value>
+  </data>
+  <data name="YesUKUA" xml:space="preserve">
+    <value>так</value>
+  </data>
+</root>

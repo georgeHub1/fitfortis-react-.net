@@ -1,0 +1,20 @@
+.sisuContainer {
+    display: flex;
+    flex-shrink: 0;
+    height: 100vh;
+    .sisuContainerInner {
+        width: 100%;
+        height: 100%;
+        background-color: #EDF0F3;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        overflow: auto;
+        @media (max-width: 767px) {
+            padding-top: 25px;
+            padding-bottom: 80px;
+        }
+    }
+}

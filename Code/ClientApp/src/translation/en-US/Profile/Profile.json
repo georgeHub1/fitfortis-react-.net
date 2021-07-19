@@ -1,0 +1,9 @@
+{
+  "header": "Profile",
+  "account": "Account",
+  "basicInformation": "Basic Information",
+  "chronicConditions": "Chronic Conditions",
+  "familyHistory": "Family History",
+  "therapyAndVaccines": "Therapy & Vaccines",
+  "saveBtn": "Save"
+}

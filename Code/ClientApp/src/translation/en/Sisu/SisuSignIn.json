@@ -1,0 +1,13 @@
+{
+    "emptyInput": "Can't be empty!",
+    "invalidEmail": "Should be a valid email!",
+    "invalidPassword": "Password must contain at least 8 characters!",
+    "welcome": "Welcome to Fit Fortis!",
+    "forgotPassword": "Forgot password?",
+    "buttonSignIn":"Sign in",
+    "buttonCreateAccount" :"Create Account",
+    "labelEmail": "Email",
+    "labelPassword": "Password",
+    "permissionDenied": "The email that you entered has not been registered with the site. Please use CREATE ACCOUNT to register!",
+    "termsOfUse": "Terms of use"
+}

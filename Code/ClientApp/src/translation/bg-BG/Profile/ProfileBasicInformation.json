@@ -1,0 +1,35 @@
+{
+  "basicInfoLabel": "Основни данни",
+  "birthDateLabel": "Дата на раждане",
+
+  "sexAtBirthPlaceholder" : "Избери пол",
+
+  "genderIdentityPlaceholder": "Избери полова идентичност",
+
+  "ethnicPlaceholder": "Избери етнически произход",
+
+  "ageLabel": "Възраст",
+  "ageDay": "Ден",
+  "ageDays": "Дни",
+  "ageMonth": "Месец",
+  "ageMonths": "Месеца",
+  "ageYear": "Година",
+  "ageYears": "Години",
+  "ageDateError": "Не можете да изберете дата в бъдещето",
+  "ageLessThanMonth": "по-малка от 1 месец",
+
+  "lifestyleLabel": "Начин на живот",
+
+  "January": "Януари",
+  "February": "Февруари",
+  "March": "Март",
+  "April": "Април",
+  "May": "Май",
+  "June": "Юни",
+  "July": "Юли",
+  "August": "Август",
+  "September": "Септември",
+  "October": "Октомври",
+  "November": "Ноември",
+  "December": "Декември"
+}

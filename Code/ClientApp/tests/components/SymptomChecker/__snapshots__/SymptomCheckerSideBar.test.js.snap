@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SymptomCheckerSideBar renders correctly 1`] = `
+<div>
+  <div
+    className="undefined undefined"
+  >
+    0
+  </div>
+  <div
+    className="undefined undefined"
+  >
+    <i
+      className="anticon"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <svg
+        aria-hidden={true}
+        className=""
+        fill="currentColor"
+        focusable="false"
+        height="1em"
+        width="1em"
+      >
+        greenCheckMark.svg
+      </svg>
+    </i>
+    <div>
+      
+      
+    </div>
+  </div>
+  
+  <div>
+    <button
+      className="ant-btn"
+      onClick={[Function]}
+      type="button"
+    />
+    <a
+      href="/encyclopedia/undefined?lang=undefined"
+      onClick={[Function]}
+    >
+      <button
+        className="ant-btn ant-btn-primary"
+        onClick={[Function]}
+        type="button"
+      />
+    </a>
+  </div>
+</div>
+`;

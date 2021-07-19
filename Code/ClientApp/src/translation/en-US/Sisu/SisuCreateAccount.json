@@ -1,0 +1,21 @@
+{
+    "createAccount": "Create Account",
+    "welcome": "Welcome to Fit Fortis!",
+    "labelFirstName": "First name",
+    "labelLastName": "Last name",
+    "labelEmail": "Email",
+    "labelPassword": "Password",
+    "signInBtn": "Sign In",
+    "emptyInput": "Can't be empty!",
+    "invalidEmail": "Should be a valid email",
+    "invalidPassword": "Password must contain at least 8 characters.",
+    "confirmYourEmailAddress": "Confirm your email.",
+    "pleaseCheckYourInboxOrJunk": "Please check your inbox or junk mail folder for an email from support@fitfortis.com.",
+    "youNeedToClickTheLink": "You need to click the link in that email to confirm your email address before you can sign in.",
+    "goToSignIn": "GO TO SIGN IN",
+    "alphanumericError": "Passwords must have at least one digit ('0'-'9').",
+    "characterError": "Passwords must have at least one non alphanumeric character.",
+    "lowercaseError": "Passwords must have at least one lowercase ('a'-'z').",
+    "uppercaseError": "Passwords must have at least one uppercase ('A'-'Z').",
+    "termsOfUse": "Terms of use"
+}

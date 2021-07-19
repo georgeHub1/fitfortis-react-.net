@@ -1,0 +1,13 @@
+{
+  "account": "Аккаунт",
+  "firstNameLabel": "Ім'я",
+  "lastNameLabel": "Прізвище",
+  "emailLabel": "Імейл",
+  "changePhoto": "Змінити фото",
+  "changePhotoInfo": "Натисніть або перетягніть фото в цю зону.",
+  "buttonChangePassword": "Змінити пароль",
+  "buttonSignOut": "Вийти з аккаунта",
+  "languageLabel": "Мова",
+  "activity": "Iсторичний запис",
+  "activityInfo": "Це історичний запис про будь-які зміни, внесені до вашого облікового запису."
+}

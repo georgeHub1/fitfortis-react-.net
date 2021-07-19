@@ -1,0 +1,13 @@
+{
+  "account": "Account",
+  "firstNameLabel": "First name",
+  "lastNameLabel": "Last name",
+  "emailLabel": "Email",
+  "changePhoto": "Change your photo",
+  "changePhotoInfo": "Click or drag photo to this area.",
+  "buttonChangePassword": "Change Password",
+  "buttonSignOut": "Sign Out",
+  "languageLabel": "Language",
+  "activity": "Activity",
+  "activityInfo": "This is the historical record of any changes you make to your account."
+}

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="70" viewBox="0 0 70 70">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="button_dark" data-name="button/dark" width="70" height="70" rx="35" fill="#f4f6f7"/>
+    </clipPath>
+  </defs>
+  <g id="Avatar_Male_Baby" data-name="Avatar / Male / Baby" clip-path="url(#clip-path)">
+    <g id="Group_3" data-name="Group 3" transform="translate(19 13)">
+      <path id="Rectangle" d="M2.383,10.1A12,12,0,0,1,14.233,0h3.535A12,12,0,0,1,29.617,10.1L32,25,29.729,38.056A12,12,0,0,1,17.907,48H14.093A12,12,0,0,1,2.271,38.056L0,25Z" transform="translate(0 0)" fill="#c3ccd1"/>
+    </g>
+    <g id="Group_2" data-name="Group 2" transform="translate(22 7)">
+      <circle id="Oval" cx="3" cy="3" r="3" transform="translate(0.749 13)" fill="#f4f6f7"/>
+      <circle id="Oval-2" data-name="Oval" cx="3" cy="3" r="3" transform="translate(18.749 13)" fill="#f4f6f7"/>
+      <g id="Group_4" data-name="Group 4" transform="translate(2.749 6)">
+        <circle id="Oval-3" data-name="Oval" cx="10" cy="10" r="10" fill="#fff"/>
+        <g id="Group_5" data-name="Group 5" transform="translate(4.251 11)">
+          <path id="Rectangle-2" data-name="Rectangle" d="M0,4.118A4.2,4.2,0,0,1,5.164.03l1,.235L6.785.111A4.2,4.2,0,0,1,12,4.186h0a3.888,3.888,0,0,1-4.657,3.64L6.162,7.532l-1,.235A4.2,4.2,0,0,1,0,3.679Z" transform="translate(0 0)" fill="#e1e6e9"/>
+          <ellipse id="Oval-4" data-name="Oval" cx="1.8" cy="1.846" rx="1.8" ry="1.846" transform="translate(4.2 2.154)" fill="#fff"/>
+          <ellipse id="Oval-5" data-name="Oval" cx="0.9" cy="0.923" rx="0.9" ry="0.923" transform="translate(8.7 3.077)" fill="#f4f6f7"/>
+          <ellipse id="Oval-6" data-name="Oval" cx="0.9" cy="0.923" rx="0.9" ry="0.923" transform="translate(1.5 3.077)" fill="#f4f6f7"/>
+        </g>
+      </g>
+      <path id="Path_2" data-name="Path 2" d="M1.241,0C-.687,2.382-.254,5,1.746,5a1.694,1.694,0,0,0,1-3" transform="translate(13.904 6.007) rotate(-150)" fill="none" stroke="#c3ccd1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

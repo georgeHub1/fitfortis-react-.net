@@ -1,0 +1,15 @@
+{
+  "deleteBtn": "nc_Видалити",
+  "closeBtn": "nc_Закрити",
+  "addBtn": "nc_Додати",
+  "searchPlaceholder": "nc_Пошук по метриках",
+  "addNewChart": "nc_Додати нового графіка",
+  "availableMetric": "nc_доступні метрик",
+  "availableMetrics": "nc_доступні метрики",
+
+  "selectedChart": "Вибраний графік",
+  "selectedCharts": "Вибрані Графіки",
+  "findNewChart": "Знайти новий графік",
+  "chooseOne": "Ваш вибір з'явиться тут. Використовуйте іншу вкладку, щоб знайти доступні діаграми.",
+  "chartIsEmpty":"Графік порожній"
+}

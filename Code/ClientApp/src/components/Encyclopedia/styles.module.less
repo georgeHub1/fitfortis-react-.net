@@ -1,0 +1,516 @@
+@import '../../styles/_variables.less';
+
+/*  CUSTOMIZATION  */
+
+.containerEncyclopediaEntry {
+  h1 {
+    font-family: Open Sans, Verdana;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    margin-top: 28px;
+    margin-bottom: 8px;
+    color: @textPrimary;
+    @media (max-width: 767px) {
+      margin-top: 28px;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+  h2 {
+    font-family: Open Sans, Verdana;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    color: @StrongBlue;
+  }
+  h3 {
+    font-family: Open Sans, Verdana;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    color: @StrongBlue;
+  }
+  h4 {
+    font-family: Open Sans, Verdana;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    color: @infoGray;
+  }
+  p {
+    font-family: Open Sans, Verdana;
+    font-size: 14px !important;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  li {
+    font-family: Open Sans, Verdana;
+    font-size: 14px;
+    margin-top: 0;
+  }
+  table {
+    caption {
+      color: #888;
+      font-size: smaller;
+      font-style: italic;
+      padding: 0px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+  }
+  table, th, td {
+      border: 1px solid #ddd;
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      font-size: 14px;
+  }
+  table tr:nth-child(even) {
+      background-color: #f2f2f2;
+  }
+
+  table tr:hover {
+      background-color: #ddd;
+  }
+  table thead th {
+      padding-top: 12px;
+      padding-bottom: 8px;
+      text-align: left;
+      background-color: #003459;
+      color: white;
+  }
+
+  table tfoot th {
+      text-align: left;
+      border-top: 4px solid #ddd;
+      background-color: #fff;
+  }
+}
+
+
+
+
+
+
+/*  CUSTOMIZATION  */
+
+.containerEncyclopediaEntry {
+  .header {
+    font-size: 32px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    color: #003459;
+    /*text-transform: capitalize;  */
+    @media (max-width: 767px) {
+      font-size: 24px;
+      margin-bottom: 8px;
+      margin-top: 0;
+      display: none;
+    }
+  }
+}
+
+.header, .mainHeader {
+  font-size: 32px;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  color: #003459;
+  /*text-transform: capitalize;  */
+}
+.main_page{
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+.mainHeader.header {
+  font-size: 32px;
+}
+.certainCategoryIcon svg {
+  font-size: 20px;
+  color: @infoGray !important;
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+}
+.searchInput {
+  width: 100%;
+}
+.searchInput input:focus {
+  box-shadow: 0 0 0 1.5px rgba(51, 88, 137, 0.7);
+}
+.searchInputBlock {
+  margin-bottom: 24px;
+  position: relative;
+  /*max-width: 900px; */
+  & .suggestionsList {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    z-index: 2;
+    transition: top 0.7s ease-in-out;
+    & > div {
+      background: rgba(255, 255, 255, 1) !important;
+    }
+  }
+}
+.searchInput input {
+  border: none;
+  background-color: #fff !important;
+  padding-left: 40px !important;
+  color: @textPrimary !important;
+  font-size: 16px !important;
+  .openSans-600-n();
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.0956465);
+  height: 54px !important;
+  @media (max-width: 767px) {
+    height: 44px !important;
+    font-size: 14px !important
+  }
+}
+.searchInput input::-webkit-input-placeholder {
+  .openSans-400-n();
+  color: @infoGray !important;
+}
+.searchInput input::placeholder {
+  .openSans-400-n();
+  color: @infoGray !important;
+}
+.searchInput input:-ms-input-placeholder {
+  .openSans-400-n();
+  color: @infoGray !important;
+}
+.CustomCard {
+  margin-top: 32px;
+}
+.showSuggestions {
+  top: 54px;
+}
+.hideSuggestions {
+  top: -800px;
+}
+.availableItem {
+  /*border-radius: 14px;*/
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 16px;
+  .openSans-600-n();
+  color: @textPrimary;
+  /*height: 54px;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 24px;
+  @media (max-width: 767px) {
+    padding: 15px 0;
+  }
+  & .addBtn {
+    .lightGrayBtn();
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    padding: 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+  &:hover {
+    background: @lightGray;
+    text-decoration: underline;
+    cursor: pointer;
+    & .addBtn {
+      display: block;
+    }
+  }
+  & .tooltipBtn {
+    .lightGrayBtn();
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    margin-left: 8px;
+    padding: 0;
+  }
+  & .leftSideAvailable {
+    display: flex;
+    width: 100%;
+  }
+}
+.noItems {
+  color: gray;
+  font-style: italic;
+  font-weight: 400;
+}
+.cardHeaderBlock {
+  position: relative;
+  height: 32px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  @media (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  & .cardHeader {
+    color: @infoGray;
+    font-size: 12px;
+    .openSans-700-n();
+    text-transform: uppercase;
+  }
+  & .deleteBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    .lightGrayBtn();
+    height: 30px;
+    /*text-transform: capitalize;*/
+    margin-left: 8px;
+    @media (max-width: 767px) {
+      position: none;
+      margin: 0;
+    }
+  }
+}
+.iconClose {
+  width: 14px;
+  height: 14px;
+}
+.showMore {
+  margin-top: 16px;
+  cursor: pointer;
+  text-align: right;
+  p {
+      display: inline-block;
+      font-size: 13px;
+      color: #8898aa;
+      font-weight: 600;
+      &:hover {
+          color: #507196;
+      }
+  }
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+}
+.sharePrintBlock {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  @media (max-width: 767px) {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  & button {
+    color: @textPrimary;
+    background: transparent;
+    border: none;
+    /*text-transform: capitalize;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    & svg {
+      font-size: 20px;
+    }
+  }
+}
+.navigationBreadCump {
+  color: @textPrimary !important;
+  .openSans-700-n();
+  font-size: 16px !important;
+  cursor: pointer;
+  span{
+    &:last-child {
+      a{
+        color: @textPrimary !important;
+      }
+    }
+  }
+}
+.containerEncyclopedia,
+.containerEncyclopediaEntry {
+  /*max-width: 900px;*/
+  font-size: 16px;
+  color: @textPrimary;
+}
+p, div {
+  font-size: 16px;
+  color: @textPrimary;
+}
+.blockWithImagesOfSick {
+  display: flex;
+  p {
+    margin-right: 20px;
+  }
+  img {
+    max-width: 100%;
+    @media (max-width: 767px) { 
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+.imageBlock, .spinnerContainer {
+  float: right;
+  margin-left: 54px;
+}
+.spinnerContainer {
+  width: 320px;
+  height: 320px;
+}
+.imageBlock,
+.imageBlock img {
+  border-radius: 14px;
+  max-width: 320px;
+  max-height: 320px;
+}
+.imageBlock {
+  max-height: 360px;
+}
+
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.ModelBlock {
+  max-width: 320px;
+  max-height: 320px;
+  cursor: move;
+  & img {
+    max-width: 320px;
+    max-height: 320px;
+  }
+}
+.controlPanel {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  & .slider {
+    width: 260px;
+  }
+  & button {
+    border: none;
+    box-shadow: none;
+    max-width: 25px;
+  }
+  & button:focus {
+    color: none;
+    border-color: none;
+    outline: none !important;
+  }
+  & div.icons {
+    display: flex;
+    align-items: center;
+  }
+  & div.icons svg {
+    font-size: 25px;
+    cursor: pointer;
+  }
+}
+
+.EncyclopediaHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 500px) { 
+    display: block;
+  }
+}
+
+.spinnerContainer {
+  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+} 
+.menuItemBlock span{
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.center{  
+  margin: 0 auto;
+  text-align: center;
+}
+.maxWidth{
+  max-width: 100%;
+}
+.description{
+  margin-top: 0px;
+}
+.footerClass{
+  margin-bottom: 0px;
+}
+.searchDetail{
+  display: block;
+  text-align: right;
+  padding-right: 5px;
+  color: #8898aa;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.containerEncyclopediaEntry {
+  .customText{
+    color: #8898aa !important;
+    font-family: Open Sans, Verdana;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px !important;
+    margin-top: 10px;
+  }  
+}
+
+.showMoreResult{
+  background: #335889;
+  color: #fff !important;
+  border-radius: 0 !important;
+}
+.causeItem {
+  display: flex;
+  margin-bottom: 10px;
+
+  & svg {
+    font-size: 24px;
+    margin-right: 12px;
+  }
+}
+.info{
+  display: flex;
+  align-items: center;
+  span{
+    margin-right: 5px;
+  }
+}
+.antdDropDown{ height: calc(100vh - 100px) }
+

@@ -1,0 +1,19 @@
+{
+  "header": "fit fortis",
+  "headerMinimized": "ff",
+
+  "adminTools": "Налаштування",
+  "metrics": "Метрики",
+  "devices": "Пристрої",
+  "documents": "Документи",
+  "encyclopedia": "Енциклопедія",
+  "home": "Головна",
+  "newsAlerts": "Новини і сповіщення",
+  "alerts": "Cповіщення",
+  "profile": "Профіль",
+  "symptomChecker": "Аналізатор симптомів",
+  "signIn": "Увійти",
+  "termsofuse": "Умови користування",
+  "about": "Про Fitfortis",
+  "privacyAndLegal": "Про Fitfortis"
+}

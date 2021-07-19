@@ -1,0 +1,11 @@
+{
+    "header": "Metrics",
+    "deleteBtn": "remove",
+    "closeBtn": "Close",
+    "addBtn": "Add",
+    "searchPlaceholder": "Search for metric",
+    "metricSettings": "Metric Settings",
+    "chooseOne": "Your selection will appear here. Use the field below to search for available metrics.",
+    "availableMetric": "available metric",
+    "availableMetrics": "available metrics"
+}

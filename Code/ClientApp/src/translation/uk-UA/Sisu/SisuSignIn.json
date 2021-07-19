@@ -1,0 +1,13 @@
+{
+    "emptyInput": "Це поле пусте!",
+    "invalidEmail": "Email не правильний!",
+    "invalidPassword": "Пароль повинен містити мінімум 8 cимволів!",
+    "welcome": "Просимо до Fit Fortis!",
+    "forgotPassword": "Забули пароль?",
+    "buttonSignIn": "Увійти",
+    "buttonCreateAccount": "Створити аккаунт",
+    "labelEmail": "Електронна пошта",
+    "labelPassword": "Пароль",
+    "permissionDenied": "Введений вами електронний лист не був зареєстрований на сайті. Для реєстрації на сайті використовуйте СТВОРИТИ АККАУНТ.",
+    "termsOfUse": "Умови користування"
+}

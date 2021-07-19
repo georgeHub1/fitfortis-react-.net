@@ -1,0 +1,16 @@
+{
+  "dayBtn": "1Д",
+  "weekBtn": "1С",
+  "monthBtn": "1М",
+  "yearBtn": "1Г",
+  "maxBtn": "МАКСИМУМ",
+  "maxBtnMobile": "Макс",
+  "addEntryBtn": "Добави запис",
+  "addResEntryBtn": "ЗАПИС",
+  "chartName":"Хронология",
+  "labResults": "Лабораторни резултати",
+  "doctorVisitsComments": "лекар Посещения Коментари",
+  "LabResultsComments": "Коментари за лабораторни резултати",
+  "doctorVisits": "Консултации",
+  "measurements": "Измервания"
+}

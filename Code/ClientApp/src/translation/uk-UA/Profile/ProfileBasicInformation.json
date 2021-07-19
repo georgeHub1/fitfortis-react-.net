@@ -1,0 +1,35 @@
+{
+  "basicInfoLabel": "Базова інформація",
+  "birthDateLabel": "День народження",
+
+  "sexAtBirthPlaceholder" : "Виберіть стать",
+
+  "genderIdentityPlaceholder": "Виберіть гендерну ідентичність",
+
+  "ethnicLabel": "Етнічне походження",
+
+  "ageLabel": "Вік",
+  "ageDay": "День",
+  "ageDays": "Днів",
+  "ageMonth": "Місяць",
+  "ageMonths": "Місяці",
+  "ageYear": "Рік",
+  "ageYears": "Роки",
+  "ageDateError": "Ви не можете вибрати майбутню дату",
+  "ageLessThanMonth": "менше 1 місяця",
+
+  "lifestyleLabel": "Спосіб життя",
+
+  "January": "Січень",
+  "February": "Лютий",
+  "March": "Березень",
+  "April": "Квітень",
+  "May": "Може",
+  "June": "Червень",
+  "July": "Липень",
+  "August": "Серпень",
+  "September": "Вересень",
+  "October": "Жовтень",
+  "November": "Листопад",
+  "December": "Грудень"
+}

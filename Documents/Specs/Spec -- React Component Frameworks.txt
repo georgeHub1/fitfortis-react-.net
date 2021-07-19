@@ -1,0 +1,33 @@
+REACT COMPONENT FRAMEWORKS
+==========================
+
+
+ANT DESIGN:
+============
+https://ant.design
++ Clean design language
++ Lots of components
+
+
+
+MATERIAL UI:
+============
+https://material-ui.com
++ Material UI
++ Material animations (radial fills)
++ FABs
++ Chips (incl. with avatars, etc.)
++ Date picker (with ranges)
++ Drawer
++ Grid List
++ Font and SVG icons
++ Menus
++ Paper
++ Checkboxes with custom icons
++ Toggles (material style)
++ Stepper (horizontal, vertical, non-linear)
++ Text fields (with hints)
+
+Here's a good sample: https://material-ui.com/getting-started/page-layout-examples/dashboard/
+
+

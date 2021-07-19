@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SymptomCheckerSearchResults renders correctly 1`] = `
+<div>
+  <div
+    className="ant-card undefined customCardContainer ant-card-bordered"
+    style={
+      Object {
+        "background": "rgba(255, 255, 255, 0.8)",
+      }
+    }
+  >
+    <div
+      className="ant-card-body"
+      style={Object {}}
+    >
+      <div>
+        <div />
+      </div>
+      <div>
+        <p />
+      </div>
+    </div>
+  </div>
+</div>
+`;

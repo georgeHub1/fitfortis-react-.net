@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="28px" viewBox="0 0 36 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>sidebar/icon/encyclopedia</title>
+    <desc>Created with Sketch.</desc>
+    <g id="01-Metrics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Fit_Fortis---v7.1-Style" transform="translate(-129.000000, -2591.000000)" stroke="#335889">
+            <g id="sidebar" transform="translate(90.000000, 2064.000000)">
+                <g id="Group-Copy-5" transform="translate(24.000000, 508.000000)">
+                    <g id="sidebar/icon/encyclopedia-normal-v2" transform="translate(16.000000, 15.000000)">
+                        <path d="M25.9854808,21.2422236 C25.9951168,21.3275354 26,21.4134826 26,21.5 C26,23.9852814 21.9705627,26 17,26 C12.0294373,26 8,23.9852814 8,21.5 C8,21.4134826 8.00488316,21.3275354 8.01451918,21.2422236 C8.00493328,21.1628217 8,21.081987 8,21 L8,14 C8,12.8954305 8.8954305,12 10,12 L24,12 C25.1045695,12 26,12.8954305 26,14 L26,21 C26,21.081987 25.9950667,21.1628217 25.9854808,21.2422236 Z" id="Combined-Shape" stroke-width="1.584" fill="#FFFFFF"></path>
+                        <g id="Group" stroke-width="1" transform="translate(28.000000, 17.000000)">
+                            <polygon id="Triangle" stroke-width="1.584" fill="#FFFFFF" points="2 8 4 14 0 14"></polygon>
+                            <path d="M1,0 L1,9.5" id="Path-5" stroke-width="1.58"></path>
+                        </g>
+                        <polygon id="Rectangle" stroke-width="1.584" fill="#FFFFFF" transform="translate(17.000000, 13.000000) rotate(-45.000000) translate(-17.000000, -13.000000) " points="6 2 22.1663691 7.83363094 28 24 11.8336309 18.1663691"></polygon>
+                        <path d="M28.708,15.4743891 L18.1387205,13.1965399 C17.5777801,13.0756483 17.2204243,12.5236603 17.3397281,11.96238 C17.3400346,11.9609413 17.3400346,11.9609413 17.3403438,11.9595031 C17.4613142,11.3981973 18.0144084,11.0412349 18.5757142,11.1622053 L30.4592218,13.7232917 C30.6230774,13.7586052 30.7744811,13.8324114 30.868182,13.911162 C31.1321063,14.1057392 31.292,14.4152595 31.292,14.75 L31.292,24.25 C31.292,24.8254807 30.8254807,25.292 30.25,25.292 L29.75,25.292 C29.1745193,25.292 28.708,24.8254807 28.708,24.25 L28.708,15.4743891 Z" id="Combined-Shape" stroke-width="1.584" fill="#FFFFFF"></path>
+                        <rect id="Rectangle" stroke-width="1.584" fill="#FFFFFF" x="28" y="23" width="4" height="4" rx="2"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

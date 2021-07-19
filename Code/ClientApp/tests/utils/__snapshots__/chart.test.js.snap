@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getPotantialPoint for selecting timeLine chart should throw exception if dateTimes is Empty 1`] = `"date time should have value"`;

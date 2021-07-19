@@ -1,0 +1,19 @@
+{
+  "header": "fit fortis",
+  "headerMinimized": "ff",
+
+  "adminTools": "Admin Tools",
+  "metrics": "Metrics",
+  "devices": "Devices",
+  "documents": "Documents",
+  "encyclopedia": "Encyclopedia",
+  "home": "Home",
+  "newsAlerts": "News & Alerts",
+  "alerts": "Alerts",
+  "profile": "Profile",
+  "symptomChecker": "Symptom Checker",
+  "signIn":"Sign in",
+  "termsofuse": "Terms of use",
+  "about": "About Fitfortis",
+  "privacyAndLegal": "About Fitfortis"
+}

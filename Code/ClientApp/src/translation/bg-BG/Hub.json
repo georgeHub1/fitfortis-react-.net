@@ -1,0 +1,19 @@
+{
+  "header": "fit fortis",
+  "headerMinimized": "ff",
+
+  "adminTools": "За администратори",
+  "metrics": "Графики",
+  "devices": "Устройства",
+  "documents": "Документи",
+  "encyclopedia": "Енциклопедия",
+  "home": "Начална страница",
+  "newsAlerts": "Новини & съобщения",
+  "alerts": "Cъобщения",
+  "profile": "Профил",
+  "symptomChecker": "Диагноза по симптоми",
+  "signIn":"Вход",
+  "termsofuse": "Условия за ползване",
+  "about": "Относно Fitfortis",
+  "privacyAndLegal": "Относно Fitfortis"
+}

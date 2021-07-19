@@ -1,0 +1,13 @@
+{
+    "emptyInput": "Не може да бъде празно!",
+    "invalidEmail": "Невалиден имейл!",
+    "invalidPassword": "Паролата трябва да съдържа поне 8 символа!",
+    "welcome": "Добре дошли във Fit Fortis!",
+    "forgotPassword": "Забравена парола?",
+    "buttonSignIn":"Вход",
+    "buttonCreateAccount" :"Създай Профил",
+    "labelEmail": "Имейл",
+    "labelPassword": "Парола",
+    "permissionDenied": "Въведеният имейл не е регистриран в сайта. Моля, използвай СЪЗДAЙ ПРОФИЛ, за да се регистрираш!",
+    "termsOfUse": "Условия за ползване"
+}

@@ -1,0 +1,10 @@
+{
+    "title": "Covid-19 CASES",
+    "total": "Total",
+    "new": "New",
+    "active": "Active",
+    "fatal": "Fatal",
+    "recovered": "Recovered",
+    "global": "Global",
+    "US": "US"
+}

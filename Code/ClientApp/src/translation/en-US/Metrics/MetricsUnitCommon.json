@@ -1,0 +1,11 @@
+{
+    "addNewMetricBtn": "Add New Metric",
+    "nameOfChart":"Name of chart",
+    "noSelected":"No Selected",
+    "Comments": "Comment",
+    "systolic": "systolic pressure",
+    "diastolic": "diastolic pressure",
+    "pleaseAddOne":"Please add one",
+    "AM": "am",
+    "PM": "pm"
+}

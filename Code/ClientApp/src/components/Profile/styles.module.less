@@ -1,0 +1,489 @@
+@import '../../styles/_variables.less';
+.header {
+  color: @textPrimary;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  font-size: 32px;
+  @media (max-width: 767px) { 
+    font-size: 24px;
+    margin-bottom: 8px;
+    margin-top: 0;
+    display: none;
+  }
+}
+
+
+
+.bottomPanel__geneticsForm,
+.bottomPanel__activityForm,
+.bottomPanel__conditionsForm {
+  height: 73px;
+  padding-right: 20px;
+}
+.form {
+  display: flex;
+  & > div:last-child {
+    width: 70%;
+    padding: 12px 24px;
+  }
+}
+.uploadBlock {
+  text-align: center;
+  padding-top: 15px;
+}
+.dragWrapper {
+  & > div:first-child {
+    background: unset;
+    padding: 15px;
+  }
+}
+.labelBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p:nth-child(2) {
+    width: 140px !important;
+  }
+}
+.uploadButton {
+  width: 100% !important;
+  max-width: 150px;
+  background: @lightGray;
+  border-radius: 14px;
+  padding: 9px 0;
+  font-size: 14px !important;
+  margin: 7px auto !important;
+  font-weight: 600;
+  color: @textPrimary !important;
+  @media (max-width: 767px) { 
+    margin: 7px auto 0 !important;
+  }
+}
+
+
+.profileSelect,
+.profileSelect > div {
+  height: 50px !important;
+  font-size: 16px !important;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: @textPrimary !important;
+  @media (max-width: 767px) { 
+    height: 40px !important;
+    font-size: 14px !important;
+  }
+}
+.profileSelect {
+  & > div {
+    padding-top: 8px;
+    @media (max-width: 767px) { 
+      padding-top: 4px;
+    }
+  }
+}
+.cardLabelProfile {
+  color: @textPrimary;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.sexGenderWrapper {
+ padding-right: 15px;
+  flex-shrink: 0;
+  & > div {
+    width: 100%;
+  }
+}
+.historyWrapper,
+.activityWrapper,
+.lifeStyleWrapper {
+  display: flex;
+  flex-direction: column;
+  & > div {
+    padding-top: 20px;
+    &:first-child {
+      padding-top: 0;
+    }
+    border-bottom: solid 1px rgb(232, 232, 232);
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+.noData {
+  color: @infoGray;
+  margin-bottom: 0;
+}
+.iconSearch svg {
+  width: 24px;
+  height: 24px;
+  color: @infoGray;
+}
+.searchInput input {
+  border: unset;
+  background-color: @lightGray;
+  padding-left: 40px !important;
+  color: @infoGray;
+  font-size: 16px;
+  .openSans-400-n();
+  height: 50px;
+}
+.groupCheckboxes {
+  margin-top: 24px;
+  height: 418px;
+  overflow-y: auto;
+  & > div {
+    margin-top: 10px;
+  }
+  & > div > label > span {
+    width: 25px !important;
+    height: 25px !important;
+    & > span {
+      background-color: transparent !important;
+      width: 25px !important;
+      height: 25px !important;
+      border-radius: 6px;
+      &::after {
+        border: 2px solid #335889 !important;
+        width: 8px !important;
+        height: 15px !important;
+        border-top: none !important;
+        border-left: none !important;
+      }
+    }
+  }
+}
+.therapiesCollapse {
+  .openSans-600-n();
+  color: @textPrimary;
+  & > div {
+    border: 1px solid #e8e8e8 !important;
+    margin-bottom: 24px;
+    border-radius: 16px !important;
+    overflow: hidden;
+    & > div {
+      color: @textPrimary !important;
+      line-height: 38px !important;
+    }
+  }
+}
+.therapiesCollapse > div > div {
+  &:nth-child(2) {
+    background: rgb(244, 246, 247) !important;
+    border-top: 1px solid #e8e8e8 !important;
+  }
+}
+.lightGrayBtn {
+  .lightGrayBtn() !important;
+  /*text-transform: capitalize;*/
+  /*width: 74px;*/
+  height: 32px !important;
+}
+.collapseLabel {
+  color: @infoGray;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.medicationWrapper {
+  display: flex;
+  margin-bottom: 15px;
+  & > .datePickerMedication {
+    border: 1px solid #e8e8e8 !important;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    border-radius: 14px;
+    line-height: initial;
+    justify-content: space-between;
+    width: 300px;
+    margin-right: 10px;
+  }
+}
+.medicationInfo.medicationInfo.medicationInfo > input {
+  font-size: 20px !important;
+  padding: 0;
+  border: none;
+  height: 27px !important;
+}
+.medicationInfo {
+  & > div {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    &:first-child {
+      font-size: 20px;
+    }
+  }
+}
+.RangePicker {
+  width: 40px;
+  display: flex;
+  cursor: pointer !important;
+  & > span {
+    border: none;
+    & > input,
+    & > span {
+      display: none;
+    }
+  }
+}
+.doseMedication {
+  border: 1px solid #e8e8e8 !important;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  border-radius: 14px;
+  line-height: initial;
+  width: calc(100% - 336px);
+}
+.removeMedication {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  color: @infoGray;
+  font-size: 14px;
+  & i {
+    cursor: pointer;
+  }
+  & button {
+    background-color: unset !important;
+    border: none !important;
+    padding: 0;
+  }
+}
+.lightGrayBtnDisabled {
+  color: #8898aa !important;
+}
+.plusDisabled {
+  color: gainsboro !important;
+  cursor: not-allowed !important;
+}
+.plusEnabled {
+  color: rgb(136, 152, 170);
+}
+.activityDescription {
+  margin-bottom: 20px;
+  border-bottom: solid 1px rgb(232, 232, 232);
+  padding-bottom: 20px;
+}
+.activityWrapper {
+  & > div {
+    display: flex;
+    padding: 10px 0;
+    margin-top: 10px;
+    @media (max-width: 767px) {
+      display: block;
+    }
+    & > div:first-child {
+      width: 250px;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+    & > div:nth-child(2) {
+      width: calc(100% - 350px);
+    }
+    & > div:nth-child(3) {
+      width: 10px;
+    }
+  }
+}
+.whatHappens {
+  color: @textPrimary;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 15px;
+  max-width: 290px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 72px;
+}
+.note, .addNote {
+  color: @infoGray;
+  font-size: 14px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+}
+.addNote {
+  & button {
+    font-weight: 500;
+    color: @infoGray;
+    border: none;
+    padding: 0;
+    /*text-transform: capitalize;*/
+    box-shadow: unset;
+    height: auto;
+  }
+}
+.changeItem {
+  border-bottom: 1px solid rgb(232, 232, 232);
+  margin-bottom: 15px;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.locationOfChange {
+  /*text-transform: capitalize;*/
+}
+.cropWrapper {
+  display: flex;
+  justify-content: center;
+}
+.croppedImageContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+}
+.croppedImageRotate {
+  margin-top: 18px !important; 
+  margin-left: 0 !important;
+  text-align: center;
+  button {
+    margin-bottom: 20px;
+    &:first-child {
+      margin-right: 15px;
+    }
+  }
+  span {
+  margin-right: 10px;
+  }
+}
+.spinnerContainer {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  display: flex;
+  margin: auto;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+.ProfileActivity {
+  margin-bottom: 25px;
+}
+.cardAge {
+  color: #8898aa;
+  min-height: 42px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-transform: lowercase;
+}
+
+.currentPregnant {
+  width: 95%;
+  .selectOptions{
+    padding-left: 60px;
+  }
+  .datepicker{
+    margin-top: 20px;
+    text-align: right;
+  }
+ 
+}
+.ageLabel {
+  margin-bottom: 15px;
+  .cardLabelProfile {
+    @media (max-width: 767px){
+      margin-bottom: 0;
+    } 
+    .customLabel {
+      > div {
+        padding: 0;
+      }    
+    }
+  }
+  .cardAge {
+    @media (max-width: 767px){
+      min-height: 25px;
+    }
+  } 
+}
+.customLabel{
+  margin: 0 !important;
+  line-height: 1.2 !important;
+  > div{
+    line-height: 1.2 !important;
+  }
+}
+.leftbasicInfo{
+  padding-right: 10px;
+}
+.rightbasicInfo{
+  padding-left: 10px;
+}
+
+.profileSelectLevel1{
+  padding-left: 40px;
+  text-align: right;
+  padding-right: 15px;
+}
+.profileSelectLevel2{
+  padding-left: 60px;
+  text-align: right;
+  padding-right: 15px;
+}
+.profileSelectLevel3{
+  padding-left: 80px;
+  text-align: right;
+  padding-right: 15px;
+  .selectOptions{
+    margin: 15px 0;
+  }
+}
+.etnicWrapper{
+  margin-top: 0;
+}
+.historyfamilyWrapper{
+  .ant-tag{
+    text-transform: none;
+  }
+}
+.chronicConditionsWrapper{
+  .ant-tag{
+    text-transform: none;
+  }
+  .ant-row{
+    margin-bottom: 0 !important;
+  }
+}
+.groupAccountButton{
+  padding-top: 16px;
+  margin-left: -8px;
+  @media (max-width: 767px){ 
+    margin-left: 0;
+  }
+  button{
+     margin-top: 15px;
+     margin-left: 8px; 
+  }
+}
+.accountBtn{
+  @media (max-width: 767px){
+    font-size: 12px !important;
+    width: 100%;
+    margin: 0 0 15px 0 !important;
+  }
+}

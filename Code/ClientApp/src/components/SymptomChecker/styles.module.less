@@ -1,0 +1,348 @@
+@import '../../styles/_variables.less';
+
+.header {
+  font-size: 32px;
+  color: @textPrimary;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  /*text-transform: capitalize;*/
+  @media (max-width: 767px) { 
+    font-size: 24px;
+    margin-bottom: 8px;
+    margin-top: 0;
+    display: none;
+  }
+}
+.certainCategoryIcon svg {
+  font-size: 20px;
+  color: @infoGray !important;
+  @media (max-width: 767px) { 
+    font-size: 18px;
+  }
+}
+.searchInput {
+  width: 100%;
+}
+.searchInput input:focus {
+  box-shadow: 0 0 0 1.5px rgba(51, 88, 137, 0.7);
+}
+.searchInputBlock {
+  margin-bottom: 24px;
+  position: relative;
+  /*max-width: 900px;*/
+  & .suggestionsList {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    z-index: 2;
+    transition: top 0.7s ease-in-out;
+    & > div {
+      background: rgba(255, 255, 255, 1) !important;
+    }
+  }
+}
+.searchInput input {
+  border: none;
+  background-color: #fff !important;
+  padding-left: 40px !important;
+  color: @textPrimary !important;
+  font-size: 16px !important;
+  .openSans-600-n();
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.0956465);
+  height: 54px !important;
+  @media (max-width: 767px) { 
+    height: 44px !important;
+    font-size: 14px !important;
+  }
+}
+.searchInput input::-webkit-input-placeholder {
+  .openSans-400-n();
+  color: @infoGray !important;
+}
+.searchInput input:-ms-input-placeholder {
+  .openSans-400-n();
+  color: @infoGray !important;
+}
+.containerEncyclopedia,
+.containerEncyclopediaEntry {
+  /*max-width: 900px;*/
+  font-size: 16px;
+  color: @textPrimary;
+}
+p,
+div {
+  font-size: 16px;
+  color: @textPrimary;
+}
+.cardHeaderBlock {
+  position: relative;
+  height: 32px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  & .cardHeader {
+    color: @infoGray;
+    font-size: 12px;
+    .openSans-700-n();
+    text-transform: uppercase;
+  }
+}
+.tags {
+  /*width: 500px;*/
+  margin-right: 10px;
+}
+.tag {
+  height: 40px !important;
+}
+.paragraphInfo {
+  color: @infoGray;
+  min-height: 42px;
+  .openSans-400-n();
+  margin-bottom: 0;
+}
+.symptomInfoBlock {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  min-height: 94px;
+  align-items: flex-start;
+  .ant-row{
+    width: 100% !important;
+  }
+}
+.infoUser {
+  display: flex;
+  justify-content: flex-end;
+  height: 70px;
+  /*min-width: 320px;*/
+  flex-shrink: 0;
+  @media (max-width: 1199px) {
+    height: auto;
+  }
+  @media (max-width: 767px) {
+    display: block;
+  }
+  & .avatar {
+      width: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      background: @lightGray;
+      border-radius: 50%;
+      margin-right: 16px;
+      @media (max-width: 767px) { 
+        margin: 0 auto 10px;
+      }
+      & svg {
+          font-size: 70px;
+      }
+  }
+  @media (max-width: 767px) { 
+    margin-top: 20px;
+  }
+}
+.selectBlock {
+  width: 234.55px;
+  @media (max-width: 1060px) { 
+   width: auto;
+  }
+  @media (max-width: 767px) { 
+   width: 100%;
+  }
+    & .selectBlock1 {
+        margin-bottom: 10px;
+    }
+}
+.selectBlock2 {
+  display: flex;
+  @media (max-width: 1199px) { 
+   display: block;
+  }
+}
+.selectBlock2 .selectWrap {
+    margin-right: 10px;
+}
+.wrapCustomCard {
+    margin-bottom: 25px;
+}
+.femaleSelected {
+  @media (max-width: 1199px) { 
+   margin-top: 10px !important;
+  }
+}
+.customSelect div{
+  font-size: 14px;
+}
+.customSelect  > div {
+    background: @lightGray;
+    border: none;
+}
+.itemCause {
+    display: flex;
+    margin-bottom: 10px;
+    border-radius: 14px;
+    &:hover {
+        background: @lightGray;
+        cursor: pointer;
+        & .nameCause {
+          text-decoration: underline;
+        }
+    }
+}
+.percentBlock {
+    width: 59px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 14px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+ .nameCause {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+ }
+ .header {
+  color: @textPrimary;
+}
+.header .percentBlock + div {
+  font-size: 14px;
+}
+.headerDrawer {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 22px;
+  & p {
+    margin: 0 10px;
+  }
+  & button {
+    box-shadow: none;
+    border: none;
+    background: @lightGray;
+    .openSans-600-n();
+    color: @textPrimary;
+    height: 24px;
+    width: 24px;
+    padding: 0;
+  }
+}
+.header {
+  &.headerCause {
+    margin: 0;
+    font-size: 22px !important;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: normal;
+  }  
+}
+
+.infoCause {
+  margin: 24px 0;
+}
+.cardWrapperNewMetric {
+  cursor: initial;
+  padding-bottom: 24px;
+  @media (max-width: 767px) {
+    max-height: calc(100vh - 153px);
+    overflow: auto;
+    padding: 24px;
+  }
+  & .infoCausePercent {
+    margin-top: 0;
+  }
+  & .headerInfo,
+  & .headerInfoNoSelected {
+    color: @textPrimary;
+    font-size: 15px;
+    .openSans-400-n();
+    margin-bottom: 30px;
+  }
+  & .headerInfoNoSelected {
+    background: #f4f6f7;
+    padding: 10px 20px;
+    border-radius: 14px;
+  }
+  & .selectedMetrics {
+    margin-bottom: 38px;
+  }
+  & .selectedMetricHeader {
+    color: @infoGray;
+    font-size: 12px;
+    .lato-900-n();
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+}
+.btnBlock {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  border-top: 1px solid rgb(232, 232, 232);
+  padding: 10px 16px;
+  text-align: right;
+  left: 0px;
+  background: rgb(255, 255, 255);
+  border-radius: 0px 0px 4px 4px;
+  button {
+    margin-left: 8px;
+  }
+}
+.causeItem {
+  display: flex;
+  margin-bottom: 10px;
+  & > div {
+    color: @textPrimary !important;
+    font-size: 16px !important;
+    .openSans-600-n();
+  }
+  & svg {
+    font-size: 24px;
+    margin-right: 12px;
+  }
+}
+.userInfoDrawer {
+  margin-bottom: 40px;
+}
+.percentBlockDrawer {
+  height: 48px;
+  width: 57px;
+  margin: 8px 20px 8px 0;
+}
+@media (max-width: 768px) {
+  .symptomInfoBlock {
+    flex-direction: column-reverse;
+  }
+  .tags {
+    width: 100%;
+  }
+}
+.infoCategory {
+  font-size: 12px;
+  font-style: italic;
+}
+.imgAvatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.symptomMobileUserIcon{
+  display: block;
+}
+.symptomMobileSelection{
+  display: block;
+}

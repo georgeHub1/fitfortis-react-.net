@@ -1,0 +1,16 @@
+{
+  "dayBtn": "1D",
+  "weekBtn": "1W",
+  "monthBtn": "1M",
+  "yearBtn": "1Y",
+  "maxBtn": "MAX",
+  "maxBtnMobile": "Max",
+  "addEntryBtn": "Add Entry",
+  "addResEntryBtn": "Add",
+  "chartName": "Timeline",
+  "labResults": "Lab results",
+  "doctorVisits": "Doctor visits",
+  "doctorVisitsComments": "doctor Visits Comments",
+  "LabResultsComments": "Lab Results Comments",
+  "measurements": "Measurements"
+}

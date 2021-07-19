@@ -1,0 +1,96 @@
+{
+  "acute bronchitis": [
+    "cough",
+    "coughing out mucus",
+    "fatigue",
+    "headache",
+    "post-nasal drip",
+    "runny nose",
+    "shortness of breath",
+    "sore throat"
+  ],
+  "cold": [
+    "cough",
+    "fatigue",
+    "low-grade fever",
+    "runny nose",
+    "sneezing",
+    "sore throat",
+    "stuffy nose",
+    "swollen sinuses"
+  ],
+  "flu": [
+    "aches",
+    "chills",
+    "cough",
+    "fatigue",
+    "fever",
+    "headache",
+    "sneezing",
+    "sore throat",
+    "stuffy nose"
+  ],
+  "pneumonia": [
+    "blue lips",
+    "blue fingernails",
+    "breathing problems",
+    "chills",
+    "cough",
+    "coughing out mucus",
+    "fatigue",
+    "fever",
+    "high fever",
+    "low appetite",
+    "sharp chest pain",
+    "sweating"
+  ],
+  "sinusitis (sinus infection)": [
+    "bad breath",
+    "cough",
+    "decreased sense of smell",
+    "fatigue",
+    "fever",
+    "headache",
+    "post-nasal drip",
+    "sinus pressure",
+    "stuffy nose"
+  ],
+  "strep throat": [
+    "aches",
+    "chills",
+    "decreased appetite",
+    "fatigue",
+    "fever",
+    "nausea",
+    "painful swallowing",
+    "rash",
+    "sore throat",
+    "swollen glands (lymph nodes)",
+    "white patches in throat"
+  ],
+  "stroke": [
+    "broken speech",
+    "confusion",
+    "difficulty speaking",
+    "dizziness",
+    "headache",
+    "numbness in face",
+    "numbness in arm",
+    "numbness in leg",
+    "trouble with walking",
+    "trouble with balance",
+    "trouble seeing with one or both eyes"
+  ],
+  "tonsillitis": [
+    "bad breath",
+    "fatigue",
+    "fever",
+    "headache",
+    "painful swallowing",
+    "red tonsils",
+    "scratchy voice",
+    "sore throat",
+    "swollen glands (lymph nodes)",
+    "white or yellow patches on tonsils"
+  ]
+}

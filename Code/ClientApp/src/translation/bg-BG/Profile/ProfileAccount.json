@@ -1,0 +1,13 @@
+{
+  "account": "Потребител",
+  "firstNameLabel": "Име",
+  "lastNameLabel": "Фамилия",
+  "emailLabel": "Имейл",
+  "changePhoto": "Промени си снимката",
+  "changePhotoInfo": "Кликни или придърпай снимка тук.",
+  "buttonChangePassword": "Промяна на паролата",
+  "buttonSignOut": "Изход от сайта",
+  "languageLabel": "Език",
+  "activity": "Направени промени",
+  "activityInfo": "Това е хронологичен запис на всички промени, които правите във вашия профил."
+}

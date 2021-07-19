@@ -1,0 +1,83 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <Configurations>Debug;Release;QA</Configurations>
+    <NeutralLanguage>en-US</NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Src\Assets\**" />
+    <Content Remove="Src\Assets\**" />
+    <EmbeddedResource Remove="Src\Assets\**" />
+    <None Remove="Src\Assets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Src\DatabaseAccess\Migrations\20200108133201_ChronicConditionChanges.cs" />
+    <Compile Remove="Src\DatabaseAccess\Migrations\20200108133201_ChronicConditionChanges.Designer.cs" />
+    <Compile Remove="Src\DatabaseAccess\Migrations\20200108134025_ChronicConditionChanges.cs" />
+    <Compile Remove="Src\DatabaseAccess\Migrations\20200108134025_ChronicConditionChanges.Designer.cs" />
+    <Compile Remove="Src\DatabaseAccess\Migrations\20200213082427_addedRole.cs" />
+    <Compile Remove="Src\DatabaseAccess\Migrations\20200213082427_addedRole.Designer.cs" />
+    <Compile Remove="Src\DatabaseAccess\Migrations\20200304094505_ChangedTableName.cs" />
+    <Compile Remove="Src\DatabaseAccess\Migrations\20200304094505_ChangedTableName.Designer.cs" />
+    <Compile Remove="Src\DatabaseAccess\Migrations\20200427114055_MetricCleanUp.cs" />
+    <Compile Remove="Src\DatabaseAccess\Migrations\20200427114055_MetricCleanUp.Designer.cs" />
+    <Compile Remove="Src\DatabaseAccess\Migrations\20200507112446_SeedChanges.cs" />
+    <Compile Remove="Src\DatabaseAccess\Migrations\20200507112446_SeedChanges.Designer.cs" />
+    <Compile Remove="Src\DatabaseAccess\Migrations\20200817104855_AddedSeederForControlCheckup.cs" />
+    <Compile Remove="Src\DatabaseAccess\Migrations\20200817104855_AddedSeederForControlCheckup.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="CommandLineParser" Version="2.4.3" />
+    <PackageReference Include="EPPlus.Core" Version="1.5.4" />
+    <PackageReference Include="Humanizer" Version="2.6.2" />
+    <PackageReference Include="Microsoft.AspNetCore.All" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OData" Version="7.1.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Sendgrid" Version="9.10.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.4.0" />
+    <PackageReference Include="UAParser" Version="3.1.44" />
+    <PackageReference Include="UnitsNet" Version="4.57.0" />
+    <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Src\Resources\ValidationErrorMessages.Designer.cs">
+      <DependentUpon>ValidationErrorMessages.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Src\Resources\ValidationErrorMessages.resx">
+      <LastGenOutput>ValidationErrorMessages.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

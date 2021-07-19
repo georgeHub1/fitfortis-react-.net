@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Fit Fortis</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style type="text/css">
+		a,h2{display:inline-block}#formFooter,input[type=text]{background-color:#f6f6f6;text-align:center}#formContent,#formFooter,h2,input[type=text]{text-align:center}a,input[type=text]{text-decoration:none}html{background-color:#56baed}body{font-family:Poppins,sans-serif;height:100vh}a{color:#92badd;font-weight:400}h2,h2.inactive{color:#ccc}h2{font-size:16px;font-weight:600;text-transform:uppercase;margin:40px 8px 10px}.wrapper{display:flex;align-items:center;flex-direction:column;justify-content:center;width:100%;min-height:100%;padding:20px}#formContent{-webkit-border-radius:10px 10px 10px 10px;border-radius:10px;background:#fff;width:90%;max-width:450px;position:relative;padding:0;-webkit-box-shadow:0 30px 60px 0 rgba(0,0,0,.3);box-shadow:0 30px 60px 0 rgba(0,0,0,.3)}#formFooter{border-top:1px solid #dce8f1;padding:25px;-webkit-border-radius:0 0 10px 10px;border-radius:0 0 10px 10px}h2.active{color:#0d0d0d;border-bottom:2px solid #5fbae9}input[type=button],input[type=reset],input[type=submit]{background-color:#56baed;border:none;color:#fff;padding:15px 80px;text-align:center;text-decoration:none;display:inline-block;text-transform:uppercase;font-size:13px;-webkit-box-shadow:0 10px 30px 0 rgba(95,186,233,.4);box-shadow:0 10px 30px 0 rgba(95,186,233,.4);-webkit-border-radius:5px 5px 5px 5px;border-radius:5px;margin:5px 20px 40px;-webkit-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out}input[type=button]:hover,input[type=reset]:hover,input[type=submit]:hover{background-color:#39ace7}input[type=button]:active,input[type=reset]:active,input[type=submit]:active{-moz-transform:scale(.95);-webkit-transform:scale(.95);-o-transform:scale(.95);-ms-transform:scale(.95);transform:scale(.95)}input[type=text]{color:#0d0d0d;padding:15px 32px;display:inline-block;font-size:16px;margin:5px;width:85%;border:2px solid #f6f6f6;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;-webkit-border-radius:5px 5px 5px 5px;border-radius:5px}input[type=text]:focus{background-color:#fff;border-bottom:2px solid #5fbae9}input[type=text]:placeholder{color:#ccc}.fadeInDown{-webkit-animation-name:fadeInDown;animation-name:fadeInDown;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}@-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}@keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes fadeIn{from{opacity:0}to{opacity:1}}@-moz-keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.fadeIn{opacity:0;-webkit-animation:fadeIn ease-in 1;-moz-animation:fadeIn ease-in 1;animation:fadeIn ease-in 1;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-duration:1s;-moz-animation-duration:1s;animation-duration:1s}.fadeIn.first{-webkit-animation-delay:.4s;-moz-animation-delay:.4s;animation-delay:.4s}.fadeIn.second{-webkit-animation-delay:.6s;-moz-animation-delay:.6s;animation-delay:.6s}.fadeIn.third{-webkit-animation-delay:.8s;-moz-animation-delay:.8s;animation-delay:.8s}.fadeIn.fourth{-webkit-animation-delay:1s;-moz-animation-delay:1s;animation-delay:1s}.underlineHover:after{display:block;left:0;bottom:-10px;width:0;height:2px;background-color:#56baed;content:"";transition:width .2s}.underlineHover:hover{color:#0d0d0d}.underlineHover:hover:after{width:100%}:focus{outline:0}.user-img{width:120px;height:120px;border-radius:50%;display:flex;align-items:center;justify-content:center}#icon{width:60%}
+
+		.login_button{
+			cursor: pointer;
+			background-color: #416683 !important;
+			box-shadow: 0 10px 30px 0 rgb(76, 115, 144) !important;
+		}
+
+		.access_key:focus{
+			border-bottom-color: #416683 !important;
+		}
+
+		.user-img{
+			height: 110px;
+			padding-top: 10px;
+		}
+
+		.site_title h1{
+			font-size: 1.5rem;
+			margin-bottom: 20px;
+			color: #416683;
+			font-family: Poppins,sans-serif;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="wrapper fadeInDown">
+		<div id="formContent">
+			<!-- Tabs Titles -->
+			<!-- Icon -->
+			<div class="fadeIn first" style="display: flex;align-items: center;justify-content: center;">
+				<div class="user-img">
+					<img src="https://i.imgur.com/bozn3lo.jpg" id="icon" alt="User Icon" />
+				</div>
+
+			</div>
+			<div class="site_title fadeIn second">
+				<h1>Fit Fortis</h1>
+			</div>
+
+			<!-- Login Form -->
+			<form id="validateForm">
+				<input type="text" id="login" class="fadeIn third access_key" name="login" placeholder="Access key" autocomplete="off">
+				<input type="submit" class="fadeIn fourth login_button" value="Log In">
+			</form>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+		var form = document.getElementById('validateForm');
+
+		form.addEventListener('submit', function(e) {
+			e.preventDefault();
+			var login = document.getElementById('login').value;
+			if (login === "" || login === undefined) {
+				alert('Please enter your access key');
+				return;
+			}
+
+			var path = `${window.location.protocol}//${window.location.hostname}`;
+
+			if (window.location.port !== "") {
+				path = `${path}:${window.location.port}/`;
+			}
+
+			const url = path + 'validate-key/' + login;
+			const xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4) {
+					// Typical action to be performed when the document is ready:
+					if (this.status == 200) {
+						try {
+							const response = JSON.parse(this.responseText);
+							console.log('response', response);
+							if(response.success === true) {
+								window.location.reload();
+							}else {
+								alert('Please enter valid access key');
+							}
+						}catch(e) {
+							alert('Please enter valid access key');
+						}
+					} else {
+						alert('Something went wrong!');
+					}
+				}
+			};
+			xhttp.open("GET", url, true);
+			xhttp.send();
+		});
+	</script>
+</body>
+</html>

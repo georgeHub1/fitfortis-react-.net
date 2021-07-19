@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>Benchmark.ResponseBenchmarks-20200828-130232</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.12.1, OS=Windows 10.0.18362.719 (1903/May2019Update/19H1)
+Intel Core i5-3550 CPU 3.30GHz (Ivy Bridge), 1 CPU, 4 logical and 4 physical cores
+.NET Core SDK=3.1.301
+  [Host]     : .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), X64 RyuJIT
+  Job-XJJMRG : .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), X64 RyuJIT
+</code></pre>
+<pre><code>IterationCount=10  WarmupCount=5  
+</code></pre>
+
+<table>
+<thead><tr><th>            Method</th><th> Mean</th><th>Error</th><th>StdDev</th><th>  Min</th><th>  Max</th>
+</tr>
+</thead><tbody><tr><td>GetEncyclopedia</td><td>2,176.2 ms</td><td>566.49 ms</td><td>374.70 ms</td><td>1,598.1 ms</td><td>2,826.1 ms</td>
+</tr><tr><td>GetMedicines</td><td>24,892.8 ms</td><td>8,952.08 ms</td><td>5,921.25 ms</td><td>17,899.5 ms</td><td>32,743.5 ms</td>
+</tr><tr><td>GetAllAnalytics</td><td>203.4 ms</td><td>54.52 ms</td><td>28.51 ms</td><td>188.0 ms</td><td>273.2 ms</td>
+</tr><tr><td>GetDataForOneAnalytic</td><td>188.0 ms</td><td>38.10 ms</td><td>22.67 ms</td><td>172.6 ms</td><td>239.6 ms</td>
+</tr><tr><td>GetDataForAllAnalytic</td><td>5,092.1 ms</td><td>1,091.29 ms</td><td>570.76 ms</td><td>4,440.1 ms</td><td>5,952.0 ms</td>
+</tr><tr><td>GetRoles</td><td>177.6 ms</td><td>5.93 ms</td><td>3.10 ms</td><td>174.6 ms</td><td>183.1 ms</td>
+</tr><tr><td>GetAdminNews</td><td>1,672.6 ms</td><td>651.74 ms</td><td>387.84 ms</td><td>1,253.3 ms</td><td>2,336.2 ms</td>
+</tr><tr><td>GetAdminNewsRecycleBin</td><td>177.0 ms</td><td>11.13 ms</td><td>7.36 ms</td><td>170.3 ms</td><td>190.2 ms</td>
+</tr><tr><td>GetUsersWithAdminRole</td><td>217.4 ms</td><td>86.28 ms</td><td>51.34 ms</td><td>181.8 ms</td><td>336.5 ms</td>
+</tr><tr><td>GetUserChartDetails</td><td>260.8 ms</td><td>17.13 ms</td><td>8.96 ms</td><td>252.3 ms</td><td>278.2 ms</td>
+</tr><tr><td>GetAllMetrics</td><td>176.9 ms</td><td>4.15 ms</td><td>2.47 ms</td><td>174.4 ms</td><td>182.4 ms</td>
+</tr><tr><td>GetAllMetricDetails</td><td>218.1 ms</td><td>45.17 ms</td><td>23.62 ms</td><td>196.5 ms</td><td>250.5 ms</td>
+</tr><tr><td>GetAllNewsByLanguage</td><td>1,061.3 ms</td><td>401.02 ms</td><td>238.64 ms</td><td>882.8 ms</td><td>1,555.3 ms</td>
+</tr><tr><td>GetMe</td><td>176.1 ms</td><td>3.33 ms</td><td>1.98 ms</td><td>171.9 ms</td><td>178.4 ms</td>
+</tr><tr><td>GetAllUserActivity</td><td>2,702.0 ms</td><td>1,086.84 ms</td><td>718.88 ms</td><td>1,893.0 ms</td><td>4,323.8 ms</td>
+</tr><tr><td>GetUserChronicConditions</td><td>4,590.9 ms</td><td>1,129.60 ms</td><td>747.16 ms</td><td>3,007.2 ms</td><td>5,632.1 ms</td>
+</tr><tr><td>GetUserFamilyHistory</td><td>1,275.5 ms</td><td>577.64 ms</td><td>382.08 ms</td><td>650.8 ms</td><td>1,884.7 ms</td>
+</tr><tr><td>GetUserTherapies</td><td>1,163.0 ms</td><td>519.41 ms</td><td>343.56 ms</td><td>803.9 ms</td><td>1,775.8 ms</td>
+</tr><tr><td>GetUserBasicInformation</td><td>178.4 ms</td><td>6.26 ms</td><td>3.73 ms</td><td>173.0 ms</td><td>184.9 ms</td>
+</tr><tr><td>GetUserLifestyle</td><td>171.1 ms</td><td>3.07 ms</td><td>1.61 ms</td><td>168.1 ms</td><td>173.6 ms</td>
+</tr><tr><td>GetUserCheckups</td><td>180.9 ms</td><td>3.23 ms</td><td>1.92 ms</td><td>178.5 ms</td><td>183.3 ms</td>
+</tr><tr><td>GetAllSymptoms</td><td>2,700.9 ms</td><td>1,456.09 ms</td><td>963.12 ms</td><td>1,807.1 ms</td><td>4,450.2 ms</td>
+</tr><tr><td>GetAllUsers</td><td>245.9 ms</td><td>25.07 ms</td><td>14.92 ms</td><td>229.9 ms</td><td>270.9 ms</td>
+</tr><tr><td>GetUserHealthIndex</td><td>183.2 ms</td><td>6.50 ms</td><td>4.30 ms</td><td>178.8 ms</td><td>191.9 ms</td>
+</tr></tbody></table>
+</body>
+</html>

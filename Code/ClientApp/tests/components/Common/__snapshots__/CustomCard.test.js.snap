@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomCard renders correctly 1`] = `
+<div
+  className="ant-card undefined customCardContainer ant-card-bordered"
+  style={
+    Object {
+      "background": "rgba(255, 255, 255, 0.8)",
+    }
+  }
+>
+  <div
+    className="ant-card-body"
+    style={Object {}}
+  />
+</div>
+`;

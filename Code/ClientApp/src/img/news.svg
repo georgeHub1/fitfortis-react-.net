@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="29px" viewBox="0 0 33 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>sidebar/icon/news normal</title>
+    <desc>Created with Sketch.</desc>
+    <g id="01-Metrics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Fit_Fortis---v7.1-Style" transform="translate(-827.000000, -2386.000000)" stroke="#335889">
+            <g id="sidebar" transform="translate(787.000000, 2064.000000)">
+                <g id="Group-32" transform="translate(24.000000, 168.000000)">
+                    <g id="Group-Copy" transform="translate(0.000000, 136.000000)">
+                        <g id="sidebar/icon/news-normal" transform="translate(16.000000, 16.000000)">
+                            <g id="Group" transform="translate(16.500000, 17.000000) rotate(-90.000000) translate(-16.500000, -17.000000) translate(2.500000, 2.500000)">
+                                <rect id="Rectangle" stroke-width="1.58" fill="#FFFFFF" x="11.71" y="19.71" width="8.58" height="9.58" rx="3.5"></rect>
+                                <rect id="Rectangle" stroke-width="1.58" fill="#FFFFFF" x="12.71" y="-0.29" width="6.58" height="9.58" rx="2.5"></rect>
+                                <path d="M9.88303139,1.25153523 C11.2637433,1.25153523 12.3830314,2.37082336 12.3830314,3.75153523 L12.3830314,16.7515352 C12.3830314,18.1322471 11.2637433,19.2515352 9.88303139,19.2515352 C8.50231952,19.2515352 7.38303139,18.1322471 7.38303139,16.7515352 L7.38303139,3.75153523 C7.38303139,2.37082336 8.50231952,1.25153523 9.88303139,1.25153523 Z" id="Rectangle" stroke-width="1.584" fill="#FFFFFF" transform="translate(9.883031, 10.251535) rotate(-285.000000) translate(-9.883031, -10.251535) "></path>
+                                <path d="M9.3879763,11.8893059 L9.3879763,7 C9.3879763,5.45912555 10.6371018,4.21 12.1779763,4.21 L19.8217388,4.21 C21.3626132,4.21 22.6117388,5.45912555 22.6117388,7 L22.6117388,11.8893059 L27.7296313,23.2656201 C28.1352181,24.1671793 27.733153,25.2268305 26.8315939,25.6324173 C26.6006998,25.7362902 26.350397,25.79 26.097214,25.79 L5.90250106,25.79 C4.91391136,25.79 4.11250106,24.9885897 4.11250106,24 C4.11250106,23.746817 4.16621087,23.4965142 4.27008378,23.2656201 L9.3879763,11.8893059 Z" id="Combined-Shape" stroke-width="1.58" fill="#FFFFFF"></path>
+                                <path d="M22.5,12 L9.30970104,12" id="Path" stroke-width="1.58"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

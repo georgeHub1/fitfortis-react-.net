@@ -1,0 +1,21 @@
+{
+	"header": "Symptom Checker",
+	"searchInputPlaceholder": "Search",
+	"symptoms": "Symptoms",
+	"symptomsInfo": "Use search to add more than one symptom",
+	"male": "Male",
+	"female": "Female",
+	"intersex": "Intersex",
+	"pregnant": "Pregnant",
+	"notPregnant": "Not-pregnant",
+	"newborn": "Newborn 0-2 months",
+	"infant": "Infant 2-12 months",
+	"toddler": "Toddler 1-4 years",
+	"child": "Child 5-11 years",
+	"teen": "Teen 12-19 years",
+	"adult20": "Adult 20-29 years",
+	"adult30": "Adult 30-39 years",
+	"adult40": "Adult 40-49 years",
+	"adult50": "Adult 50-59 years",
+	"adult60": "Adult 60+ years"
+}

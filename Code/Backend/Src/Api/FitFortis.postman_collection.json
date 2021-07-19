@@ -1,0 +1,5486 @@
+{
+	"info": {
+		"_postman_id": "3d4d4458-87ce-4e74-ae96-17e1550091fa",
+		"name": "FitFortis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AdminTools",
+			"item": [
+				{
+					"name": "Analytic",
+					"item": [
+						{
+							"name": "api/admintools/analytic/lang/{languageCode}",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/api/{{version}}/admintools/analytic/lang/en-US",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"{{version}}",
+										"admintools",
+										"analytic",
+										"lang",
+										"en-US"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/admintools/analytic/{analyticId}",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/api/{{version}}/admintools/analytic/0e1c5b5e-4068-4e3d-c928-08d7eff7f7f8?dateFrom=03-05-2020&dateTo=05-05-2020&startitem=1&maxitems=1000",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"{{version}}",
+										"admintools",
+										"analytic",
+										"0e1c5b5e-4068-4e3d-c928-08d7eff7f7f8"
+									],
+									"query": [
+										{
+											"key": "dateFrom",
+											"value": "03-05-2020"
+										},
+										{
+											"key": "dateTo",
+											"value": "05-05-2020"
+										},
+										{
+											"key": "startitem",
+											"value": "1"
+										},
+										{
+											"key": "maxitems",
+											"value": "1000"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/admintools/analytic/details/lang/{languageCode}",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/{{version}}/admintools/analytic/details/lang/en-US?dateFrom=03-05-2020&dateTo=05-05-2020",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"{{version}}",
+										"admintools",
+										"analytic",
+										"details",
+										"lang",
+										"en-US"
+									],
+									"query": [
+										{
+											"key": "dateFrom",
+											"value": "03-05-2020"
+										},
+										{
+											"key": "dateTo",
+											"value": "05-05-2020"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/admintools/analytic",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"data\": \n  {\n  \t\"CategoryBgBg\": \"\",\n  \t\"NameBbBg\": \"\",\n  \t\"CategoryEnUs\": \"\",\n  \t\"NameEnUs\": \"\",\n  \t\"CategoryUkUa\": \"\",\n  \t\"NameUkUa\": \"\",\n    \"Code\": \"ANALYTICS_METRIC\",\n    \"SqlQuery\": \"SELECT COUNT (*) AS Value FROM [dbo].[Metric]\"\n  }\n}"
+								},
+								"url": {
+									"raw": "{{host}}/api/{{version}}/admintools/analytic",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"{{version}}",
+										"admintools",
+										"analytic"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/admintools/analytic/details/lang/{languageCode}",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/{{version}}/admintools/analytic/details/lang/en-US",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"{{version}}",
+										"admintools",
+										"analytic",
+										"details",
+										"lang",
+										"en-US"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/admintools/analytic/{analyticId}",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"data\": \n  {\n  \t\"CategoryBgBg\": \"\",\n  \t\"NameBbBg\": \"\",\n  \t\"CategoryEnUs\": \"\",\n  \t\"NameEnUs\": \"\",\n  \t\"CategoryUkUa\": \"\",\n  \t\"NameUkUa\": \"\",\n    \"Code\": \"ANALYTICS_USERS_NO_DOB\",\n    \"SqlQuery\": \"SELECT COUNT (*) AS Value FROM [dbo].[AspNetUsers] WHERE DateOfBirth is NULL\"\n  }\n}"
+								},
+								"url": {
+									"raw": "{{host}}/api/{{version}}/admintools/analytic/b6e5ce55-4c2d-4749-c922-08d7eff7f7f8",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"{{version}}",
+										"admintools",
+										"analytic",
+										"b6e5ce55-4c2d-4749-c922-08d7eff7f7f8"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/admintools/analytic/{analyticId}",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/{{version}}/admintools/analytic/b6e5ce55-4c2d-4749-c922-08d7eff7f7f8",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"{{version}}",
+										"admintools",
+										"analytic",
+										"b6e5ce55-4c2d-4749-c922-08d7eff7f7f8"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/admintools/analytic/{analyticId}",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{host}}/api/{{version}}/admintools/analytic/6f57aeb0-1827-4352-a1de-08d7a30d6b39",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"{{version}}",
+										"admintools",
+										"analytic",
+										"6f57aeb0-1827-4352-a1de-08d7a30d6b39"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "api/admintools/role",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/admintools/role",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"admintools",
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/admintools/news",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/admintools/news",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"admintools",
+								"news"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/admintools/news/recyclebin",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/admintools/news/recyclebin",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"admintools",
+								"news",
+								"recyclebin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/admintools/alert",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/admintools/alert",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"admintools",
+								"alert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/admintools/role/user/{userId}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/admintools/role/user/6f57aeb0-1827-4352-a1de-08d7a30d6b39",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"admintools",
+								"role",
+								"user",
+								"6f57aeb0-1827-4352-a1de-08d7a30d6b39"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/admintools/role/{roleName}/user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/admintools/role/Admin/user",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"admintools",
+								"role",
+								"Admin",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/admintools/role/admin/user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/admintools/role/admin/user",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"admintools",
+								"role",
+								"admin",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/admintools/role",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n    \"name\": \"Admin\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/admintools/role",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"admintools",
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/admintools/role/user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n    \"userId\": \"6f57aeb0-1827-4352-a1de-08d7a30d6b39\",\n    \"role\": \"Admin\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/admintools/role/user",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"admintools",
+								"role",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/admintools/system/upload",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{accept}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "File",
+									"type": "file",
+									"src": "/C:/Users/andriy/Desktop/avatar_Male.svg"
+								},
+								{
+									"key": "Name",
+									"value": "avatar_Male.svg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/admintools/system/upload",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"admintools",
+								"system",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/admintools/news/restore",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{accept}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"keys\":[\n  \t\t\"024d75bf-e27d-49b4-ae5a-e4408f6b456a\"\n  \t\t\"e24b9828-99e3-4e7c-9dd5-fbb171027839\"\n  \t\t]\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/admintools/news/restore",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"admintools",
+								"news",
+								"restore"
+							]
+						},
+						"description": "type = cv | images"
+					},
+					"response": []
+				},
+				{
+					"name": "api/admintools/news/{newsId}/inactivate",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/admintools/news/569a3ded-b613-4b01-584d-08d7df7448a4/inactivate",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"admintools",
+								"news",
+								"569a3ded-b613-4b01-584d-08d7df7448a4",
+								"inactivate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/admintools/role/{roleName}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/admintools/role/Role",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"admintools",
+								"role",
+								"Role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/admintools/role/{roleName}/user/{userId}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/admintools/role/Role/user/6f57aeb0-1827-4352-a1de-08d7a30d6b39",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"admintools",
+								"role",
+								"Role",
+								"user",
+								"6f57aeb0-1827-4352-a1de-08d7a30d6b39"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Alert",
+			"item": [
+				{
+					"name": "api/alert/user/{userId}/lang/{languageCode}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/alert/user/6f57aeb0-1827-4352-a1de-08d7a30d6b39/lang/en-US",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"alert",
+								"user",
+								"6f57aeb0-1827-4352-a1de-08d7a30d6b39",
+								"lang",
+								"en-US"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/alert/user/{userId}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/alert/user/6f57aeb0-1827-4352-a1de-08d7a30d6b39",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"alert",
+								"user",
+								"6f57aeb0-1827-4352-a1de-08d7a30d6b39"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/alert",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"MessageEnUs\": \"Coronavirus is here!!!\",\n  \t\"MessageUkUa\": \"Коронавірус вже тут!!!\",\n  \t\"MessageBgBg\": \"Коронавирусът е тук!!!\",\n  \t\"ExecutionDate\": \"22-03-2020\",\n  \t\"Type\": 1\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/alert",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"alert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/alert/{alertId}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"MessageEnUs\": \"Coronavirus is here!!!!\",\n  \t\"MessageUkUa\": \"Коронавірус вже тут!!!!\",\n  \t\"MessageBgBg\": \"Коронавирусът е тук!!!!\",\n  \t\"ExecutionDate\": \"21-03-2020\",\n  \t\"Type\": 1\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/alert/d7d81134-9a28-449d-f89a-08d7af8deb34",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"alert",
+								"d7d81134-9a28-449d-f89a-08d7af8deb34"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/alert/{alertId}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/alert/d7d81134-9a28-449d-f89a-08d7af8deb34",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"alert",
+								"d7d81134-9a28-449d-f89a-08d7af8deb34"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "SigninAnalytic",
+			"item": [
+				{
+					"name": "api/analytic/user/signin",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/analytic/user/signin?userId=41d92a4d-bb33-4d45-d2ad-08d7c59feac1&dateFrom=03-05-2020&dateTo=05-05-2020",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"analytic",
+								"user",
+								"signin"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "41d92a4d-bb33-4d45-d2ad-08d7c59feac1"
+								},
+								{
+									"key": "dateFrom",
+									"value": "03-05-2020"
+								},
+								{
+									"key": "dateTo",
+									"value": "05-05-2020"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/analytic/session",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"UserId\": \"41d92a4d-bb33-4d45-d2ad-08d7c59feac1\",\n  \t\"SessionDurationInSeconds\": 25\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/analytic/session",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"analytic",
+								"session"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/analytic/user/signin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n  \n  {\n  \t\"email\": \"testy\",\n    \"event\":\"processed\"\n  }\n"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/analytic/sendgrid/event",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"analytic",
+								"sendgrid",
+								"event"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Chart",
+			"item": [
+				{
+					"name": "api/chart/{id}/user/{userId}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/chart/00000000-0000-0000-0000-000000000001/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"chart",
+								"00000000-0000-0000-0000-000000000001",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/chart/user/{userId}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/chart/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b?startitem=1&maxitems=1000",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"chart",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							],
+							"query": [
+								{
+									"key": "startitem",
+									"value": "1"
+								},
+								{
+									"key": "maxitems",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/chart/user/{userId}/bulk/lang/en-US",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/chart/user/CCEBE7FB-FA56-4226-21BF-08D7C5BEA34C/bulk/lang/en-US",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"chart",
+								"user",
+								"CCEBE7FB-FA56-4226-21BF-08D7C5BEA34C",
+								"bulk",
+								"lang",
+								"en-US"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/chart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"Name\": \"Chart 1\",\n  \t\"UserId\": \"b2ef5acd-b98b-4be0-affb-08d7432783f0\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/chart",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"chart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/chart/metric",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"Name\": \"Chart 1\",\n  \t\"UserId\": \"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b\",\n  \t\"MetricId\": \"00000000-0000-0000-0000-000000000001\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/chart/metric",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"chart",
+								"metric"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/chart/metric/bulk",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"Name\": \"Chart 1\",\n  \t\"UserId\": \"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b\",\n  \t\"MetricIds\": [\n  \t\t\"00000000-0000-0000-0000-000000000005\",\n  \t\t\"00000000-0000-0000-0000-000000000002\"\n  \t\t]\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/chart/metric/bulk",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"chart",
+								"metric",
+								"bulk"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/chart/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"Name\": \"Chart Rename\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/chart/42398f08-e323-41ef-1b5e-08d735c61f35",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"chart",
+								"42398f08-e323-41ef-1b5e-08d735c61f35"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/chart/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/chart/4010cb6e-5406-4785-fe2f-08d58ff76e32",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"chart",
+								"4010cb6e-5406-4785-fe2f-08d58ff76e32"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "ChartMetric",
+			"item": [
+				{
+					"name": "api/chartmetric/chart/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/chartmetric/chart/00000000-0000-0000-0000-000000000001?startitem=1&maxitems=1000",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"chartmetric",
+								"chart",
+								"00000000-0000-0000-0000-000000000001"
+							],
+							"query": [
+								{
+									"key": "startitem",
+									"value": "1"
+								},
+								{
+									"key": "maxitems",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/chartmetric/chart/{chartId}/metric/{metricId}",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/chartmetric/chart/00000000-0000-0000-0000-000000000001/metric/00000000-0000-0000-0000-000000000001",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"chartmetric",
+								"chart",
+								"00000000-0000-0000-0000-000000000001",
+								"metric",
+								"00000000-0000-0000-0000-000000000001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/chartmetric/chart/{chartId}/metric",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"keys\":[\n  \t\t\"00000000-0000-0000-0000-000000000005\",\n  \t\t\"00000000-0000-0000-0000-000000000002\"\n  \t\t]\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/chartmetric/chart/00000000-0000-0000-0000-000000000001/metric",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"chartmetric",
+								"chart",
+								"00000000-0000-0000-0000-000000000001",
+								"metric"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/chartmetric/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"ShowGoalLines\": false,\n  \t\"AnnotateLastEntry\": true,\n  \t\"AnnotateMaxEntry\": false,\n  \t\"AnnotateMinEntry\": false,\n  \t\"BackgroundColor\": \"\",\n  \t\"Stroke\": \"\",\n  \t\"Goal\": 1,\n  \t\"GoalMin\": 2,\n  \t\"GoalMax\": 10,\n  \t\"Ymin\": 1,\n  \t\"Ymax\": 10\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/chartmetric/42398f08-e323-41ef-1b5e-08d735c61f35",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"chartmetric",
+								"42398f08-e323-41ef-1b5e-08d735c61f35"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/chartmetric/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/chartmetric/4010cb6e-5406-4785-fe2f-08d58ff76e32",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"chartmetric",
+								"4010cb6e-5406-4785-fe2f-08d58ff76e32"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Document",
+			"item": [
+				{
+					"name": "api/document/user/{userId}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/document/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b?startitem=1&maxitems=1000",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"document",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							],
+							"query": [
+								{
+									"key": "startitem",
+									"value": "1"
+								},
+								{
+									"key": "maxitems",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/document/user/{userId}/recyclebin",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/document/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b/recyclebin?startitem=1&maxitems=1000",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"document",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+								"recyclebin"
+							],
+							"query": [
+								{
+									"key": "startitem",
+									"value": "1"
+								},
+								{
+									"key": "maxitems",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/document/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/document/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"document",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/document/{id}/download",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/document/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b/download",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"document",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+								"download"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/document/searchhistory/user/{userId}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/document/searchhistory/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"document",
+								"searchhistory",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/document/user/{userId}/upload",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{accept}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "File",
+									"type": "file",
+									"src": "/C:/Users/andriy/Desktop/starwars.jpg"
+								},
+								{
+									"key": "FileName",
+									"value": "starwars.jpg",
+									"type": "text"
+								},
+								{
+									"key": "Type",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "Description",
+									"value": "Test Description",
+									"type": "text"
+								},
+								{
+									"key": "Date",
+									"value": "2019-12-30T10:00:00Z",
+									"type": "text"
+								},
+								{
+									"key": "FileSize",
+									"value": "147 KB",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/document/user/cfee8cfb-cb5f-46e8-4cdd-08d799bd34ed/upload",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"document",
+								"user",
+								"cfee8cfb-cb5f-46e8-4cdd-08d799bd34ed",
+								"upload"
+							]
+						},
+						"description": "type = cv | images"
+					},
+					"response": []
+				},
+				{
+					"name": "api/document/searchhistory",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"SearchText\": \"SomeDocument\",\n  \t\"LinkedEntityId\": \"F2F48E15-D827-4717-E57B-08D74AE7C7E4\",\n    \"UserId\": \"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b\",\n    \"IsSuccessful\": true\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/document/searchhistory",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"document",
+								"searchhistory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/document/user/{userId}/restore",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{accept}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"keys\":[\n  \t\t\"024d75bf-e27d-49b4-ae5a-e4408f6b456a\"\n  \t\t\"e24b9828-99e3-4e7c-9dd5-fbb171027839\"\n  \t\t]\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/document/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b/restore",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"document",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+								"restore"
+							]
+						},
+						"description": "type = cv | images"
+					},
+					"response": []
+				},
+				{
+					"name": "api/document/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"FileName\": \"TestFile\",\n  \t\"Description\": \"Test Description\",\n  \t\"Type\": \"MedicalDiagnosis\",\n  \t\"Date\": \"2019-12-30T10:00:00Z\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/document/5BB2136B-5D5A-49BA-C826-08D74BC3835D",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"document",
+								"5BB2136B-5D5A-49BA-C826-08D74BC3835D"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/document/{id}/inactivate",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/document/5BB2136B-5D5A-49BA-C826-08D74BC3835D/inactivate",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"document",
+								"5BB2136B-5D5A-49BA-C826-08D74BC3835D",
+								"inactivate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/document/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/document/5BB2136B-5D5A-49BA-C826-08D74BC3835D",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"document",
+								"5BB2136B-5D5A-49BA-C826-08D74BC3835D"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/document/searchhistory/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/document/searchhistory/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"document",
+								"searchhistory",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Encyclopedia",
+			"item": [
+				{
+					"name": "api/encyclopedia/{id}/lang/{languageCode}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/encyclopedia/1A7318CA-CFA7-4EF7-C827-08D74BC3835D/lang/en-US",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"encyclopedia",
+								"1A7318CA-CFA7-4EF7-C827-08D74BC3835D",
+								"lang",
+								"en-US"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/encyclopedia/search/lang/{languageCode}/key/{searchKey}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/encyclopedia/search/lang/en-US/key/A1?startitem=1&maxitems=1000",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"encyclopedia",
+								"search",
+								"lang",
+								"en-US",
+								"key",
+								"A1"
+							],
+							"query": [
+								{
+									"key": "startitem",
+									"value": "1"
+								},
+								{
+									"key": "maxitems",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/encyclopedia/search/lang/{languageCode}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/encyclopedia/search/lang/en-US?startitem=1&maxitems=1000",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"encyclopedia",
+								"search",
+								"lang",
+								"en-US"
+							],
+							"query": [
+								{
+									"key": "startitem",
+									"value": "1"
+								},
+								{
+									"key": "maxitems",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/encyclopedia/searchhistory/user/{userId}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/encyclopedia/searchhistory/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"encyclopedia",
+								"searchhistory",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/encyclopedia",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"Title\": \"A1C\",\n  \t\"Synonyms\": \"Glycohemoglobin, HbA1C, Hemoglobin A1C test\",\n  \t\"ConciseDescription\": \"А1С - аналіз крові на діабет 2-го типу та діабет. Він вимірює ваш середній рівень глюкози в крові або рівня цукру в крові за останні 3 місяці. Для постановки діагнозу лікарі можуть застосовувати A1C самостійно або в поєднанні з іншими тестами на діабет. Вони також використовують A1C, щоб побачити, наскільки добре ви керуєте діабетом. Цей тест відрізняється від перевірок цукру в крові, які люди з діабетом роблять щодня.Результат тесту A1C наведено у відсотках. Чим вищий відсоток, тим вище рівень цукру в крові:- Нормальний рівень А1С нижче 5,7 відсотка- Предіабет становить від 5,7 до 6,4 відсотка. Передіабет є фактором ризику захворювання на діабет другого типу. Людям, які страждають на діабет, можливо, потрібні пересичення щороку.- ЦД 2 типу вище 6,5 відсотка- Якщо у вас діабет, вам слід проходити тест А1С не рідше двох разів на рік. Мета A1C для багатьох людей, хворих на діабет, нижче 7. Вона може відрізнятися для вас. Запитайте, якою має бути ваша мета. Якщо результат А1С занадто високий, можливо, вам доведеться змінити план догляду за діабетом.NIH: Національний інститут діабету та захворювань травлення та нирок\",\n  \t\"ExtendedDescription\": \"Що таке тест A1C?Тест А1С - це аналіз крові, який дає інформацію про середні рівні глюкози в крові, які також називають цукром у крові за останні 3 місяці. Тест А1С може бути використаний для діагностики діабету та діабету 2 типу (1). Тест А1С також є основним тестом, який використовується для лікування діабету.Тест A1C іноді називають тестом на гемоглобін A1C, HbA1c, гликований гемоглобін або тест на глікогемоглобін. Гемоглобін - це частина еритроцитів, яка несе кисень до клітин. Глюкоза приєднується до гемоглобіну у клітинах крові або пов'язується з ним, і тест А1С заснований на такому приєднанні глюкози до гемоглобіну.Чим вищий рівень глюкози у крові, тим більше глюкози буде приєднуватися до гемоглобіну. Тест A1C вимірює кількість гемоглобіну з приєднаною глюкозою та відображає середній рівень глюкози в крові за останні 3 місяці.Результат тесту A1C повідомляється у відсотках. Чим вищий відсоток, тим вище рівень глюкози в крові. Нормальний рівень А1С нижче 5,7 відсотка.Чому людина повинна пройти тест A1C?Тестування може допомогти медичним працівникам- знайдіть предіабет і порадьте вас щодо зміни способу життя, які допоможуть вам затримати або запобігти діабет другого типу- знайдіть діабет другого типу- співпрацювати з вами для моніторингу захворювання та допомагати приймати рішення щодо лікування для запобігання ускладненьЯкщо у вас є фактори ризику розвитку діабету або діабету, поговоріть зі своїм лікарем про те, чи варто вам здавати аналізи.Як використовується тест A1C для діагностики діабету та діабету 2 типу?Медичні працівники можуть використовувати тест A1C самостійно або в поєднанні з іншими тестами на діабет для діагностики діабету та діабету 2 типу. Не потрібно поспішати перед тим, як здати кров на тест А1С, а це означає, що кров може бути взята для тесту в будь-який час дня.Якщо у вас немає симптомів, але тест A1C показує, що у вас діабет або предіабет, вам слід повторити тест в інший день, використовуючи тест A1C або один з інших тестів на діабет, щоб підтвердити діагноз (2).Результати A1C та що означають цифри:Нормальна - нижче 5,7 відсоткаПереддіабет - 5,7 до 6,4 відсоткаДіабет - 6,5 відсотка або абое(Будь-який тест, який використовується для діагностики діабету, вимагає підтвердження з повторним вимірюванням, якщо немає явних симптомів діабету)Використовуючи тест A1C для діагностики, ваш лікар направить ваш зразок крові, взятого з вени, в лабораторію, яка використовує сертифікований NGSP метод. NGSP, який раніше називався Національною програмою стандартизації глікогемоглобіну, засвідчує, що виробники тестів A1C забезпечують результати, які відповідають і порівнянні з тими, які використовуються в дослідженні щодо контролю діабету та ускладнень.Зразки крові, проаналізовані в кабінеті або клініці лікаря, відомі як тести на лікування, не повинні використовуватися для діагностики.Тест A1C не слід застосовувати для діагностики діабету 1 типу, гестаційного діабету або діабету, пов’язаного з муковісцидозом. Тест A1C може дати помилкові результати людям з певними станами.Передіабет є фактором ризику розвитку діабету 2 типу. В межах діабету A1C від 5,7 до 6,4 відсотка, чим вище А1С, тим більший ризик виникнення діабету.Чи застосовується тест А1С під час вагітності?Медичні працівники можуть використовувати тест А1С на початку вагітності, щоб перевірити, чи є у жінки з факторами ризику діагностований діабет перед вагітністю. Оскільки тест A1C відображає середній рівень глюкози в крові за останні 3 місяці, тестування на початку вагітності може включати значення, що відображають час до вагітності. Тест на випробування глюкози або пероральний тест на толерантність до глюкози (OGTT) використовуються для перевірки гестаційного діабету, як правило, між 24 та 28 тижнями вагітності. Якщо у вас був гестаційний діабет, вам слід здати аналіз на діабет не пізніше ніж через 12 тижнів після народження дитини. Якщо рівень глюкози в крові все ще високий, у вас може виникнути діабет другого типу. Навіть якщо рівень глюкози в крові в нормі, ви все ще маєте більше шансів на розвиток діабету 2 типу в майбутньому і вам слід здавати аналізи кожні 3 роки.Чи можуть бути використані інші тести на рівень глюкози в крові для діагностики діабету та діабету другого типу?Так. Медичні працівники також використовують тест на плазмову глюкозу натще (FPG) та OGTT для діагностики діабету та діабету 2 типу. Для цих аналізів на рівень глюкози в крові, які використовуються для діагностики діабету, потрібно зробити швидкий принаймні 8 годин, перш ніж здавати кров. Якщо у вас є симптоми діабету, ваш лікар може використати випадковий тест на глюкозу в плазмі, який не потребує голодування. У деяких випадках медичні працівники використовують тест А1С, щоб допомогти підтвердити результати чергового аналізу глюкози в крові.Чи може результат тесту A1C поставити інший діагноз, ніж тести на глюкозу в крові?Так. У деяких людей аналіз глюкози в крові може виявити діабет, коли тест А1С не робить. Також може статися зворотне - тест А1С може вказувати на діабет, навіть якщо аналіз глюкози в крові не відповідає. Через ці відмінності в результатах тестів медичні працівники повторюють тести перед постановкою діагнозу.Люди з різними\",\n  \t\"Tag\": \"Diabetes mellitus, metabolic problem\",\n  \t\"OrganSystem\": \"Blood, heart and circulation; pancreas\",\n  \t\"Visuals\": \"\",\n  \t\"LanguageCode\": \"uk-UA\",\n  \t\"OriginalId\": \"464b9d37-006c-43b4-dba1-08d74bc09677\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/encyclopedia",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"encyclopedia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/encyclopedia/searchhistory",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"SearchText\": \"Alcohol dependence\",\n  \t\"LinkedEntityId\": \"F2F48E15-D827-4717-E57B-08D74AE7C7E4\",\n    \"UserId\": \"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b\",\n    \"IsSuccessful\": true\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/encyclopedia/searchhistory",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"encyclopedia",
+								"searchhistory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/encyclopedia/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"TitleEnUs\": \"Alcohol\",\n  \t\"TitleUkUa\": \"Алкоголь\",\n  \t\"TitleBgBg\": \"Алкохол\",\n  \t\"DescriptionEnUs\": \"...\",\n  \t\"DescriptionUkUa\": \"...\",\n  \t\"DescriptionBgBg\": \"...\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/encyclopedia/00000000-0000-0000-0000-000000000018",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"encyclopedia",
+								"00000000-0000-0000-0000-000000000018"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/encyclopedia/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/encyclopedia/5BB2136B-5D5A-49BA-C826-08D74BC3835D",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"encyclopedia",
+								"5BB2136B-5D5A-49BA-C826-08D74BC3835D"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/encyclopedia/searchhistory/user/{userId}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/encyclopedia/searchhistory/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"encyclopedia",
+								"searchhistory",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/encyclopedia/searchhistory/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/encyclopedia/searchhistory/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"encyclopedia",
+								"searchhistory",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "EncyclopediaMedicine",
+			"item": [
+				{
+					"name": "api/encyclopediamedicine/search/lang/{languageCode}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/encyclopediamedicine/search/lang/en-US",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"encyclopediamedicine",
+								"search",
+								"lang",
+								"en-US"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/encyclopediamedicine/{id}/lang/{languageCode}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/encyclopediamedicine/49df9cd9-c4c4-497a-b0b9-000000100001/lang/en-US",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"encyclopediamedicine",
+								"49df9cd9-c4c4-497a-b0b9-000000100001",
+								"lang",
+								"en-US"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/encyclopediamedicine/searchhistory/user/{userId}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/encyclopediamedicine/searchhistory/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"encyclopediamedicine",
+								"searchhistory",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/encyclopediamedicine",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"Title\": \"A1C\",\n  \n  \t\"OriginalId\": \"464b9d37-006c-43b4-dba1-08d74bc09677\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/encyclopediamedicine",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"encyclopediamedicine"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/encyclopediamedicine/searchhistory",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"SearchText\": \"Alcohol dependence\",\n  \t\"LinkedEntityId\": \"20f642cc-20e3-443e-a9f8-000000100008\",\n    \"UserId\": \"41d92a4d-bb33-4d45-d2ad-08d7c59feac1\",\n    \"IsSuccessful\": true\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/encyclopediamedicine/searchhistory",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"encyclopediamedicine",
+								"searchhistory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/encyclopediamedicine/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"TitleEnUs\": \"Alcohol\",\n  \t\"TitleUkUa\": \"Алкоголь\",\n  \t\"TitleBgBg\": \"Алкохол\",\n  \t\"DescriptionEnUs\": \"...\",\n  \t\"DescriptionUkUa\": \"...\",\n  \t\"DescriptionBgBg\": \"...\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/encyclopediamedicine/00000000-0000-0000-0000-000000000018",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"encyclopediamedicine",
+								"00000000-0000-0000-0000-000000000018"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/encyclopediamedicine/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/encyclopediamedicine/5BB2136B-5D5A-49BA-C826-08D74BC3835D",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"encyclopediamedicine",
+								"5BB2136B-5D5A-49BA-C826-08D74BC3835D"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/encyclopediamedicine/searchhistory/user/{userId}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/encyclopediamedicine/searchhistory/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"encyclopediamedicine",
+								"searchhistory",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/encyclopediamedicine/searchhistory/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/encyclopediamedicine/searchhistory/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"encyclopediamedicine",
+								"searchhistory",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Metic",
+			"item": [
+				{
+					"name": "api/metric/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/metric/00000000-0000-0000-0000-000000000001",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"metric",
+								"00000000-0000-0000-0000-000000000001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/metric/search/lang/{languageCode}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/metric/search/lang/en-US?startitem=1&maxitems=1000",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"metric",
+								"search",
+								"lang",
+								"en-US"
+							],
+							"query": [
+								{
+									"key": "startitem",
+									"value": "1"
+								},
+								{
+									"key": "maxitems",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/metric/details/lang/{languageCode}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/metric/details/lang/en",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"metric",
+								"details",
+								"lang",
+								"en"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/metric/search/lang/{languageCode}/key/{searchKey}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/metric/search/lang/en-US/key/height?startitem=1&maxitems=1000",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"metric",
+								"search",
+								"lang",
+								"en-US",
+								"key",
+								"height"
+							],
+							"query": [
+								{
+									"key": "startitem",
+									"value": "1"
+								},
+								{
+									"key": "maxitems",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/metric/searchhistory/user/{userId}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/metric/searchhistory/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"metric",
+								"searchhistory",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/metric/searchhistory",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"SearchText\": \"Blood\",\n    \"UserId\": \"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b\",\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/metric/searchhistory",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"metric",
+								"searchhistory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/metric/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"EncyclopediaId\": \"00000000-0000-0000-0000-000000000007\"\n  \t\"Code\": \"PWT\",\n    \"UnitsEnUs\": \"Hrs\",\n    \"UnitsUkUa\": \"год\"\n    \"DefaultYMin\": \"+3\",\n    \"DefaultYMax\": \"-3\",\n    \"DefaultBackgroundColor\": \"\",\n    \"DefaultBackgroundImage\": \"\",\n    \"DefaultAreaFillOpacity\": \"\",\n    \"DefaultStroke\": \"\",\n    \"DefaultGoalMin\": 0,\n    \"DefaultGoalMax\": 0,\n    \"DefaultGoal\": 1\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/metric/a8cdee08-c012-4b39-62ab-08d71c8ec8f4",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"metric",
+								"a8cdee08-c012-4b39-62ab-08d71c8ec8f4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/metric/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/metric/4010cb6e-5406-4785-fe2f-08d58ff76e32",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"metric",
+								"4010cb6e-5406-4785-fe2f-08d58ff76e32"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/metric/searchhistory/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/metric/searchhistory/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"metric",
+								"searchhistory",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/metric/searchhistory/user/{userId}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/metric/searchhistory/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"metric",
+								"searchhistory",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "MetricData",
+			"item": [
+				{
+					"name": "api/metricdata/user/{id}/metric/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/metricdata/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b/metric/00000000-0000-0000-0000-000000000010?dateFrom=03-03-2018&dateTo=12-12-2019&startitem=1&maxitems=1000",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"metricdata",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+								"metric",
+								"00000000-0000-0000-0000-000000000010"
+							],
+							"query": [
+								{
+									"key": "dateFrom",
+									"value": "03-03-2018"
+								},
+								{
+									"key": "dateTo",
+									"value": "12-12-2019"
+								},
+								{
+									"key": "startitem",
+									"value": "1"
+								},
+								{
+									"key": "maxitems",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/metricdata",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"Date\": \"11-06-2020\",\n  \t\n    \"UserId\": \"ccc35700-e223-4877-b892-08d73e6dc763\",\n    \"MetricId\": \"00000000-0000-0000-0000-000000000017\",\n    \"LabResultsComments\": \"TEST This is a long comment that demonstrates the use of this field\",\n    \"DoctorVisitComments\": \"\",\n    \"Comment\": \"\"\n  }\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/metricdata",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"metricdata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/metricdata/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n    \"Date\": \"11-06-2020\",\n    \"Value\": 99,\n  \t\"LabResultsComments\": \"UPDATE TEST again update api\",\n    \"DoctorVisitComments\": \"\",\n    \"Comment\": \"\"\n  }\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/metricdata/90D38071-F9D5-4566-F5EA-08D6E8135654",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"metricdata",
+								"90D38071-F9D5-4566-F5EA-08D6E8135654"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/metricdata/user/{userId}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n    \"metricdata\":\n  [ \n      {\n        \"Date\": \"2019-12-31T01:00:00Z\",\n        \"Value\": 187,\n          \"MetricId\": \"00000000-0000-0000-0000-000000000011\",\n          \"Comment\": \"\",\n          \"Id\": \"13728149-95c4-4b5c-b5f7-08d79a947e93\"\n      },\n      {\n        \"Date\": \"2019-11-31T01:00:00Z\",\n        \"Value\": 70,\n          \"MetricId\": \"00000000-0000-0000-0000-000000000015\",\n          \"Comment\": \"\"\n      }\n  ]\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/metricdata/user/cfee8cfb-cb5f-46e8-4cdd-08d799bd34ed",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"metricdata",
+								"user",
+								"cfee8cfb-cb5f-46e8-4cdd-08d799bd34ed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/metricdata/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/metricdata/4010cb6e-5406-4785-fe2f-08d58ff76e32",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"metricdata",
+								"4010cb6e-5406-4785-fe2f-08d58ff76e32"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "News",
+			"item": [
+				{
+					"name": "api/news/lang/{languageCode}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/news/lang/en-US",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"news",
+								"lang",
+								"en-US"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/news/{newsId}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/news/cfee8cfb-cb5f-46e8-4cdd-08d799bd34ed",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"news",
+								"cfee8cfb-cb5f-46e8-4cdd-08d799bd34ed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/news/{newsId}/picture/download",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/news/d7d81134-9a28-449d-f89a-08d7af8deb34/picture/download",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"news",
+								"d7d81134-9a28-449d-f89a-08d7af8deb34",
+								"picture",
+								"download"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/news/",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/news?link=UlltV/7dJoBh7HBXei9smrWTlH84kgURSB7aTtbUar5+1EWEUE/GMwiJvSSLiZVxpkPErNe9vqV0vxfBTgAUqazhjM6tqpDTaAByA3j0W3OSIFUbOw0xrdCaGWFs8S8+IZtXRgB9Tv/qHrNGB3t9TQ==",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"news"
+							],
+							"query": [
+								{
+									"key": "link",
+									"value": "UlltV/7dJoBh7HBXei9smrWTlH84kgURSB7aTtbUar5+1EWEUE/GMwiJvSSLiZVxpkPErNe9vqV0vxfBTgAUqazhjM6tqpDTaAByA3j0W3OSIFUbOw0xrdCaGWFs8S8+IZtXRgB9Tv/qHrNGB3t9TQ=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/news/searchhistory/user/{userId}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/news/searchhistory/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"news",
+								"searchhistory",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/news/searchhistory",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"SearchText\": \"Alcohol dependence\",\n  \t\"LinkedEntityId\": \"F2F48E15-D827-4717-E57B-08D74AE7C7E4\",\n    \"UserId\": \"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b\",\n    \"IsSuccessful\": true\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/news/searchhistory",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"news",
+								"searchhistory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/news",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"TitleEnUs\": \"Injections\",\n  \t\"TitleUkUa\": \"Інєкції\",\n  \t\"TitleBgBg\": \"Главоболие\",\n  \t\"DescriptionEnUs\": \"Among them an increasingly popular method of corrective eye surgery known as LASIK. LASIK is an acronym for the surgery, which stands for Laser Assisted In Situ Keratomileusis. This procedure has become increasingly reliable, with unresolved complications reported in, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\",\n  \t\"DescriptionUkUa\": \"21 століття - це золотий вік хірургічних процедур, серед них все більш популярний метод корекційної хірургії ока, відомий як LASIK. LASIK - це абревіатура для хірургічної операції, яка розшифровується як Laser Assisted In Situ Keratomileusis. Ця процедура стає все більш надійною, про нерішені ускладнення повідомляється в,\",\n  \t\"DescriptionBgBg\": \"21 век е златният век за хирургичните процедури, сред които все по-популярен метод за корективна очна хирургия, известен като LASIK. LASIK е съкращение за операцията, което означава „Лазерна асистирана инсулт кератомилеузис“. Тази процедура става все по-надеждна, с нерешени усложнения, докладвани в,\",\n  \t\"Date\": \"7-26-2020\",\n  \t\"PictureId\": \"\",\n  \t\"PictureUrl\": \"\",\n  \t\"Language\": \"uk-Ua\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/news",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"news"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/news/share/email",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"UserIdFrom\": \"6f57aeb0-1827-4352-a1de-08d7a30d6b39\",\n  \t\"EmailTo\": \"ferencandrsi@gmail.com\",\n  \t\"NewsId\": \"d7d81134-9a28-449d-f89a-08d7af8deb34\",\n  \t\"EmailBody\": \"test email body\"\n  \t\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/news/share/email",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"news",
+								"share",
+								"email"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/news/like",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"NewsId\": \"d7d81134-9a28-449d-f89a-08d7af8deb34\",\n  \t\"UserId\": \"6f57aeb0-1827-4352-a1de-08d7a30d6b39\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/news/like",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"news",
+								"like"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/news/picture/upload",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{accept}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "File",
+									"type": "file",
+									"src": "/C:/Users/andriy/Desktop/Starwars.jpg"
+								},
+								{
+									"key": "Name",
+									"value": "starwars.jpg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/news/picture/upload",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"news",
+								"picture",
+								"upload"
+							]
+						},
+						"description": "type = cv | images"
+					},
+					"response": []
+				},
+				{
+					"name": "api/news/{newsId}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"TitleEnUs\": \"Headaches\",\n  \t\"TitleUkUa\": \"Головні болі\",\n  \t\"TitleBgBg\": \"Главоболие\",\n  \t\"DescriptionEnUs\": \"The 21st century is the golden age for surgical procedures, among them an increasingly popular method of corrective eye surgery known as LASIK. LASIK is an acronym for the surgery, which stands for Laser Assisted In Situ Keratomileusis. This procedure has become increasingly reliable, with unresolved complications reported in, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Super Popular\",\n  \t\"DescriptionUkUa\": \"21 століття - це золотий вік хірургічних процедур, серед них все більш популярний метод корекційної хірургії ока, відомий як LASIK. LASIK - це абревіатура для хірургічної операції, яка розшифровується як Laser Assisted In Situ Keratomileusis. Ця процедура стає все більш надійною, про нерішені ускладнення повідомляється в,\",\n  \t\"DescriptionBgBg\": \"21 век е златният век за хирургичните процедури, сред които все по-популярен метод за корективна очна хирургия, известен като LASIK. LASIK е съкращение за операцията, което означава „Лазерна асистирана инсулт кератомилеузис“. Тази процедура става все по-надеждна, с нерешени усложнения, докладвани в,\",\n  \t\"Date\": \"7-26-2020\",\n  \t\"PictureId\": \"\",\n  \t\"PictureUrl\": \"\",\n  \t\"Language\": \"uk-Ua\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/news/d7d81134-9a28-449d-f89a-08d7af8deb34",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"news",
+								"d7d81134-9a28-449d-f89a-08d7af8deb34"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/news/{newsId}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/news/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"news",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/news/{newsId}/user/{userId}/like",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/news/d7d81134-9a28-449d-f89a-08d7af8deb34/user/6f57aeb0-1827-4352-a1de-08d7a30d6b39/like",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"news",
+								"d7d81134-9a28-449d-f89a-08d7af8deb34",
+								"user",
+								"6f57aeb0-1827-4352-a1de-08d7a30d6b39",
+								"like"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/news/searchhistory/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/news/searchhistory/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"news",
+								"searchhistory",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Profile",
+			"item": [
+				{
+					"name": "api/profile/account/me",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/profile/account/me",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"profile",
+								"account",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/profile/activity/user/{userId}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/profile/activity/user/cfee8cfb-cb5f-46e8-4cdd-08d799bd34ed",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"profile",
+								"activity",
+								"user",
+								"cfee8cfb-cb5f-46e8-4cdd-08d799bd34ed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/profile/avatar/user/{id}/download",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/profile/avatar/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b/download",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"profile",
+								"avatar",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+								"download"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/profile/chroniccondition/user/{userId}/lang/{languageCode}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/profile/chroniccondition/user/cfee8cfb-cb5f-46e8-4cdd-08d799bd34ed/lang/en-US",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"profile",
+								"chroniccondition",
+								"user",
+								"cfee8cfb-cb5f-46e8-4cdd-08d799bd34ed",
+								"lang",
+								"en-US"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/profile/familyhistory/user/{userId}/lang/{languageCode}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/profile/familyhistory/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b/lang/en-US?startitem=1&maxitems=1000",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"profile",
+								"familyhistory",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+								"lang",
+								"en-US"
+							],
+							"query": [
+								{
+									"key": "startitem",
+									"value": "1"
+								},
+								{
+									"key": "maxitems",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/profile/therapyandvaccine/user/{userId}/lang/{languageCode}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/profile/therapyandvaccine/user/6f57aeb0-1827-4352-a1de-08d7a30d6b39/lang/en-US?startitem=1&maxitems=1000",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"profile",
+								"therapyandvaccine",
+								"user",
+								"6f57aeb0-1827-4352-a1de-08d7a30d6b39",
+								"lang",
+								"en-US"
+							],
+							"query": [
+								{
+									"key": "startitem",
+									"value": "1"
+								},
+								{
+									"key": "maxitems",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/profile/basicinformation/user/{userId}/lang/{languageCode}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/profile/basicinformation/user/4a07edf0-8b7f-4a2f-a966-08d7b08fe998/lang/uk-Ua?startitem=1&maxitems=1000",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"profile",
+								"basicinformation",
+								"user",
+								"4a07edf0-8b7f-4a2f-a966-08d7b08fe998",
+								"lang",
+								"uk-Ua"
+							],
+							"query": [
+								{
+									"key": "startitem",
+									"value": "1"
+								},
+								{
+									"key": "maxitems",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/profile/lifestyle/user/{userId}/lang/{languageCode}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/profile/lifestyle/user/ccc35700-e223-4877-b892-08d73e6dc763/lang/en-US?startitem=1&maxitems=1000",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"profile",
+								"lifestyle",
+								"user",
+								"ccc35700-e223-4877-b892-08d73e6dc763",
+								"lang",
+								"en-US"
+							],
+							"query": [
+								{
+									"key": "startitem",
+									"value": "1"
+								},
+								{
+									"key": "maxitems",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/profile/controlcheckup/user/{userId}/lang/{languageCode}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/profile/controlcheckup/user/6f57aeb0-1827-4352-a1de-08d7a30d6b39/lang/en-US",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"profile",
+								"controlcheckup",
+								"user",
+								"6f57aeb0-1827-4352-a1de-08d7a30d6b39",
+								"lang",
+								"en-US"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/profile/basicinformation/user/{userId}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n    \"SexAtBirth\": \"Female\",\n    \"GenderIdentity\": \"Female\",\n    \"EthnicOrigin\": \"MiddleEastern\",\n    \"BloodGroup\": \"O\",\n    \"RhFactor\":\"Positive\",\n    \"Pregnancy\": \"No\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/profile/basicinformation/user/5ae79f88-b0f3-48b4-286d-08d83e988526",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"profile",
+								"basicinformation",
+								"user",
+								"5ae79f88-b0f3-48b4-286d-08d83e988526"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/profile/lifestyle/user/{userId}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t \"Diet\": \"Normal\",\n    \"Sports\": \"Intensively\",\n    \"Alcohol\": \"OccasionallyWithMeals\",\n    \"Tobacco\": \"No\",\n    \"SexuallyActive\": \"No\",\n    \"Highpromiscuity\": \"No\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/profile/lifestyle/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"profile",
+								"lifestyle",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/profile/avatar/user/{userId}/upload",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{accept}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "File",
+									"type": "file",
+									"src": "/C:/Users/andriy/Desktop/Fotos/Football/47396410_2185496818375997_6053905859983966208_o.jpg"
+								},
+								{
+									"key": "Name",
+									"value": "avatar.jpg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/profile/avatar/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b/upload",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"profile",
+								"avatar",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+								"upload"
+							]
+						},
+						"description": "type = cv | images"
+					},
+					"response": []
+				},
+				{
+					"name": "api/profile/chroniccondition/user/{userId}",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"keys\":[\n  \t\t\"00000000-0000-0000-0000-000000000005\",\n  \t\t\"00000000-0000-0000-0000-000000000002\"\n  \t\t]\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/profile/chroniccondition/user/cfee8cfb-cb5f-46e8-4cdd-08d799bd34ed",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"profile",
+								"chroniccondition",
+								"user",
+								"cfee8cfb-cb5f-46e8-4cdd-08d799bd34ed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/profile/familyhistory/user/{userId}",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"keys\":[\n  \t\t\"00000000-0000-0000-0000-000000000017\",\n  \t\t\"00000000-0000-0000-0000-000000000019\"\n  \t\t]\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/profile/familyhistory/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"profile",
+								"familyhistory",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/profile/therapyandvaccine/user/{userId}",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"keys\":[\n  \t\t\"00000000-0000-0000-0000-000000000001\",\n  \t\t\"00000000-0000-0000-0000-000000000006\"\n  \t\t]\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/profile/therapyandvaccine/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"profile",
+								"therapyandvaccine",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/profile/avatar/user/{id}/avatar",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/profile/avatar/user/4010cb6e-5406-4785-fe2f-08d58ff76e32/avatar",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"profile",
+								"avatar",
+								"user",
+								"4010cb6e-5406-4785-fe2f-08d58ff76e32",
+								"avatar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/profile/chroniccondition/user/{userid}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"keys\":[\n  \t\t\"00000000-0000-0000-0000-000000000001\"\n  \t\t]\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/profile/chroniccondition/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"profile",
+								"chroniccondition",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/profile/familyhistory/user/{userId}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"keys\":[\n  \t\t\"364445f2-973d-4bb1-babd-08d76cf55df9\"\n  \t\t]\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/profile/familyhistory/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"profile",
+								"familyhistory",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/profile/therapyandvaccine/user/{userId}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"keys\":[\n  \t\t\"00000000-0000-0000-0000-000000000001\"\n  \t\t]\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/profile/therapyandvaccine/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"profile",
+								"therapyandvaccine",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "SISU",
+			"item": [
+				{
+					"name": "api/sisu/login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n    \"email\": \"fit.fortis@outlook.com\",\n    \"password\": \"Qaprov-taswo8-kuqzlx\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/sisu/login",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"sisu",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/sisu/logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/sisu/logout",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"sisu",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/sisu/password/change",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{accept}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n    \"oldPassword\": \"Qwedsa1234!\",\n    \"newPassword\": \"Qwedsa12345!\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/sisu/password/change",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"sisu",
+								"password",
+								"change"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/sisu/password/forgot",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{accept}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{bearer}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n \t\"email\": \"email\",\n \t\"LanguageCode\": \"en-US\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/sisu/password/forgot",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"sisu",
+								"password",
+								"forgot"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/sisu/password/forgot/reset",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "{{accept}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{bearer}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n \t\"userId\": \"00000000-0000-0000-0000-000000000000\",\n \t\"token\": \"ABC\",\n  \t\"newPassword\" : \"Pass\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/sisu/password/forgot/reset",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"sisu",
+								"password",
+								"forgot",
+								"reset"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/sisu/register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n    \"email\": \"andriy.ferents@blackthorn-vision.com\",\n    \"password\": \"Qwedsa1234!\",\n    \"firstName\": \"Andrii\",\n    \"lastName\": \"Ferents\",\n    \"language\": \"en-US\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/sisu/register",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"sisu",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/sisu/register/confirm",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n    \"userId\": \"ID\",\n    \"emailConfirmationToken\": \"token\",\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/sisu/register/confirm",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"sisu",
+								"register",
+								"confirm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/sisu/register/confirm/resend",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n    \"email\": \"EMAIl\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/sisu/register/confirm/resend",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"sisu",
+								"register",
+								"confirm",
+								"resend"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "SymptomChecker",
+			"item": [
+				{
+					"name": "api/symptomchecker/search/lang/{languageCode}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/symptomchecker/search/lang/en-US?applicableToMale=true&applicableToFemale=true&applicableToFemalePregnant=true&minAgeOfApplicability=0&maxAgeOfApplicability=1000&startitem=1&maxitems=1000",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"symptomchecker",
+								"search",
+								"lang",
+								"en-US"
+							],
+							"query": [
+								{
+									"key": "applicableToMale",
+									"value": "true"
+								},
+								{
+									"key": "applicableToFemale",
+									"value": "true"
+								},
+								{
+									"key": "applicableToFemalePregnant",
+									"value": "true"
+								},
+								{
+									"key": "minAgeOfApplicability",
+									"value": "0"
+								},
+								{
+									"key": "maxAgeOfApplicability",
+									"value": "1000"
+								},
+								{
+									"key": "startitem",
+									"value": "1"
+								},
+								{
+									"key": "maxitems",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/symptomchecker/searchhistory/user/{userId}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/symptomchecker/searchhistory/user/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"symptomchecker",
+								"searchhistory",
+								"user",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/symptomchecker/searchhistory",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"SearchText\": \"Alcohol dependence\",\n  \t\"LinkedEntityId\": \"F2F48E15-D827-4717-E57B-08D74AE7C7E4\",\n    \"UserId\": \"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b\",\n    \"IsSuccessful\": true\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/symptomchecker/searchhistory",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"symptomchecker",
+								"searchhistory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/symptomchecker/searchhistory/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/symptomchecker/searchhistory/2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"symptomchecker",
+								"searchhistory",
+								"2a3ee5c4-219b-4d6e-c27f-08d71c8e9c7b"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "api/user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/user?startitem=1&maxitems=1000",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"user"
+							],
+							"query": [
+								{
+									"key": "startitem",
+									"value": "1"
+								},
+								{
+									"key": "maxitems",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/user/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/user/53AB28FD-3214-4FD1-C977-08D7AA1CCD59",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"user",
+								"53AB28FD-3214-4FD1-C977-08D7AA1CCD59"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/user/{id}/healthindex",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/{{version}}/user/41d92a4d-bb33-4d45-d2ad-08d7c59feac1/healthindex",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"user",
+								"41d92a4d-bb33-4d45-d2ad-08d7c59feac1",
+								"healthindex"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/user/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \n  {\n  \t\"FirstName\": \"Janette\",\n  \t\"LastName\": \"Smith\",\n    \"DateOfBirth\": \"7-26-1974\",\n    \"SexAtBirthDueDate\": \"7-26-1990\",\n    \"Language\": \"en-US\",\n    \"Height\": 186,\n    \"Weight\": 76.3,\n    \"BiologicalChildren\": 0,\n    \"NonBiologicalChildren\": 0,\n    \"CurrentlyPregnant\": \"\",\n    \"PregnantDueDate\": \"\",\n    \"FirstPregnancyDate\": \"\",\n    \"LastPregnancy\": \"\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/user/b2ef5acd-b98b-4be0-affb-08d7432783f0",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"user",
+								"b2ef5acd-b98b-4be0-affb-08d7432783f0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/user/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/{{version}}/user/4010cb6e-5406-4785-fe2f-08d58ff76e32",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"{{version}}",
+								"user",
+								"4010cb6e-5406-4785-fe2f-08d58ff76e32"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

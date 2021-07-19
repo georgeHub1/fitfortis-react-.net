@@ -1,0 +1,9 @@
+{
+    "Weight": "Body weight",
+    "BodyWeightLang": "kg",
+    "StressLevel": "Psychological stress",
+    "Pulse": "Heart rate",
+    "PulseLang": "bpm",
+    "Add": "Add",
+    "Save": "Save"
+}

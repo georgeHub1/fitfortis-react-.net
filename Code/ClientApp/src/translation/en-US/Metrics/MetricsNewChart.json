@@ -1,0 +1,15 @@
+{
+  "deleteBtn": "nc_remove",
+  "closeBtn": "nc_Close",
+  "addBtn": "nc_Add",
+  "searchPlaceholder": "nc_Search for metric",
+  "addNewChart": "nc_Add New Chart",
+  "availableMetric": "nc_available metric",
+  "availableMetrics": "nc_available metrics",
+
+  "selectedChart": "Selected Chart",
+  "selectedCharts": "Selected Charts",
+  "findNewChart": "Find a New Chart",
+  "chooseOne": "Your selection will appear here. Use the other tab to search for available charts.",
+  "chartIsEmpty":"Chart is Empty"
+}

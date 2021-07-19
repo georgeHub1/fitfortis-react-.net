@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Documents renders correctly 1`] = `
+<div>
+  <h1 />
+  <div>
+    <div
+      className="mainUploadSection"
+    >
+      <div
+        className="uploadBox"
+      >
+        <span>
+          <div
+            className="ant-upload ant-upload-drag uploadSection"
+            onDragLeave={[Function]}
+            onDragOver={[Function]}
+            onDrop={[Function]}
+            style={
+              Object {
+                "height": undefined,
+              }
+            }
+          >
+            <span
+              className="ant-upload ant-upload-btn"
+              onClick={[Function]}
+              onDragOver={[Function]}
+              onDrop={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              <input
+                accept=""
+                directory={null}
+                multiple={false}
+                onChange={[Function]}
+                onClick={[Function]}
+                style={
+                  Object {
+                    "display": "none",
+                  }
+                }
+                type="file"
+                webkitdirectory={null}
+              />
+              <div
+                className="ant-upload-drag-container"
+              >
+                <div
+                  className="uploadContent"
+                >
+                  <button
+                    className="ant-btn"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <i
+                      aria-label="icon: plus"
+                      className="anticon anticon-plus"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className=""
+                        data-icon="plus"
+                        fill="currentColor"
+                        focusable="false"
+                        height="1em"
+                        viewBox="64 64 896 896"
+                        width="1em"
+                      >
+                        <path
+                          d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"
+                        />
+                        <path
+                          d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"
+                        />
+                      </svg>
+                    </i>
+                    <span
+                      className="uploadText"
+                    />
+                  </button>
+                  <p />
+                </div>
+              </div>
+            </span>
+          </div>
+          <div
+            className="ant-upload-list ant-upload-list-text"
+          />
+        </span>
+      </div>
+    </div>
+    <div
+      className="documentDetails"
+    >
+      <div
+        className="ant-list documentTabs ant-list-split"
+      >
+        <div
+          className="ant-spin-nested-loading"
+        >
+          <div
+            className="ant-spin-container"
+          >
+            <li
+              className="ant-list-item"
+              onClick={[Function]}
+            >
+              <span
+                aria-label={null}
+                className="ant-typography active"
+                style={
+                  Object {
+                    "WebkitLineClamp": null,
+                  }
+                }
+              >
+                 (
+                0
+                )
+              </span>
+            </li>
+            <li
+              className="ant-list-item"
+              onClick={[Function]}
+            >
+              <span
+                aria-label={null}
+                className="ant-typography"
+                style={
+                  Object {
+                    "WebkitLineClamp": null,
+                  }
+                }
+              >
+                 (
+                0
+                )
+              </span>
+            </li>
+          </div>
+        </div>
+      </div>
+      <div
+        className="searchBox"
+      >
+        <span
+          className="ant-input-search ant-input-affix-wrapper"
+        >
+          <input
+            className="ant-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            style={null}
+            type="text"
+            value=""
+          />
+          <span
+            className="ant-input-suffix"
+          >
+            <i
+              aria-label="icon: search"
+              className="anticon anticon-search ant-input-search-icon"
+              onClick={[Function]}
+              tabIndex={-1}
+            >
+              <svg
+                aria-hidden="true"
+                className=""
+                data-icon="search"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"
+                />
+              </svg>
+            </i>
+          </span>
+        </span>
+      </div>
+      <div>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<svg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 32 32\\">
+  <path opacity=\\".25\\" d=\\"M16 0 A16 16 0 0 0 16 32 A16 16 0 0 0 16 0 M16 4 A12 12 0 0 1 16 28 A12 12 0 0 1 16 4\\"/>
+  <path d=\\"M16 0 A16 16 0 0 1 32 16 L28 16 A12 12 0 0 0 16 4z\\">
+    <animateTransform attributeName=\\"transform\\" type=\\"rotate\\" from=\\"0 16 16\\" to=\\"360 16 16\\" dur=\\"0.8s\\" repeatCount=\\"indefinite\\" />
+  </path>
+</svg>
+",
+            }
+          }
+          style={
+            Object {
+              "fill": "#335889",
+              "height": 64,
+              "width": 64,
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
